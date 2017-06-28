@@ -1,0 +1,22 @@
+name = SPruit-SPnet
+description = Child theme van SPruit voor SPnet
+package = Other
+version = 0.2
+core = 7.x
+base theme = spruit
+
+stylesheets[all][] = css/spruit_spnet.css
+stylesheets[all][] = css/spnet-panels.css
+stylesheets[all][] = css/spnet-webforms.css
+stylesheets[all][] = css/spnet-books.css
+stylesheets[all][] = css/spnet-sp-aanmelden.css
+stylesheets[all][] = css/spnet-person.css
+stylesheets[all][] = css/shame.css
+stylesheets[all][] = css/spnet-webforms-buurten.css
+
+regions[highlight] = Highlighted content
+regions[content]   = Primary content
+regions[secondary] = Secondary content
+regions[footer]    = Footer content
+regions[search]    = Search
+regions[quicklinks_top]   = Quick links topbar
