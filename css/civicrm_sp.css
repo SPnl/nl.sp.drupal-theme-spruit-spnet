@@ -1,10 +1,3 @@
-/* ==========================================================================
-   CSS voor de CiviCRM-backend binnen het SP-thema
-   ========================================================================== */
-
-/* Reset van stijlen van SPruit-thema */
-
-
 .crm-container th,
 .crm-container table.display thead th,
 .crm-container table thead.sticky th,
@@ -792,4 +785,22 @@ form#CustomData .custom-group-Gemeentes td.html-adjust {
 
 span.crm-status-icon {
   display: inline-block;
+}
+
+/* Rolstoel custom field */
+
+#Register .crm-profile-name-Rolstoel_83 .content .crm-form-radio {
+  display: block;
+  float: left;
+  clear: left;
+  margin-top: 3px;
+  margin-right: 3px;
+}
+
+#Register .crm-profile-name-Rolstoel_83 .content label {
+  float: left;
+}
+
+#Register .crm-profile-name-Rolstoel_83 .ui-icon-close {
+  display: none;
 }

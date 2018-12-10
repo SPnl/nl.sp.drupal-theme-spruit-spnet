@@ -1,15 +1,12 @@
-/**
- * @file
- * Styling lidworden formulier (module: nl.sp.drupal-aanmelden) 
-*/
-
 .page-aanmelden .content-header .title {
   color: #f60000;
   text-align: center;
 }
+
 .page-aanmelden .site-navigation a {
   color: #f1f1f1;
 }
+
 .page-aanmelden .main-top-wrapper {
   display: none;
 }
@@ -30,20 +27,24 @@
 .page-aanmelden form {
   padding: 0 1.4em;
 }
+
 .page-aanmelden form fieldset {
   border: none;
   border-bottom: 3px solid #f1f1f1;
   padding: 0 .72em 2.1em .72em;
   overflow: hidden;
 }
+
 .page-aanmelden form fieldset:last-of-type {
   border-bottom: none;
 }
+
 .page-aanmelden form legend {
   margin: 0;
   padding: 0;
   font-family: 'HelveticaNeueLTStd-BdCn';
 }
+
 .page-aanmelden form label {
   display: inline-block;
 }
@@ -56,10 +57,12 @@
 #edit-personal-information-gender {
   padding: .4em;
 }
+
 #spaanmelden-form-lid .form-item-personal-information-gender .form-type-radio {
   display: inline-block;
   padding: 1em;
 }
+
 #spaanmelden-form-lid .form-item-personal-information-gender .form-item label {
   width: 40%;
 }
@@ -68,9 +71,11 @@
   display: block;
   width: 960px;
 }
+
 #spaanmelden-form-lid .form-item-personal-information-birthdate .form-item {
   margin-right: .4em;
 }
+
 #spaanmelden-form-lid .form-item-personal-information-birthdate .form-item label {
   width: 75px;
   font-size: .9em;
@@ -85,15 +90,16 @@
   width: 120px;
   display: inline-block;
 }
+
 #spaanmelden-form-lid [class*="form-item-contact-"] label,
 #spaanmelden-form-lid [class*="form-item-address-"] label {
   width: 172px;
   display: inline-block;
 }
 
-#spaanmelden-form-lid .form-item-personal-information-birthdate label{
+#spaanmelden-form-lid .form-item-personal-information-birthdate label {
   display: block;
-  padding-bottom: .4em;;
+  padding-bottom: .4em;
 }
 
 #spaanmelden-form-lid .form-item-address-zipcode input {

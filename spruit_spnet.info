@@ -1,18 +1,19 @@
 name = SPruit-SPnet
-description = Child theme van SPruit voor SPnet
+description = Vormgeving voor SPnet 
 package = Other
-version = 0.2
+version = 2.0
 core = 7.x
-base theme = spruit
 
-stylesheets[all][] = css/spruit_spnet.css
-stylesheets[all][] = css/spnet-panels.css
-stylesheets[all][] = css/spnet-webforms.css
-stylesheets[all][] = css/spnet-books.css
-stylesheets[all][] = css/spnet-sp-aanmelden.css
-stylesheets[all][] = css/spnet-person.css
-stylesheets[all][] = css/shame.css
-stylesheets[all][] = css/spnet-webforms-buurten.css
+scripts[] = js/vendor/modernizr-2.8.3.min.js
+scripts[] = js/vendor/noframework.waypoints.min.js
+scripts[] = js/main.js
+scripts[] = js/myfonts.js
+
+; Fonts
+stylesheets[all][] = fonts/SPnet-icons.css
+
+; Panels
+plugins[panels][layouts] = layouts
 
 regions[highlight] = Highlighted content
 regions[content]   = Primary content
@@ -20,3 +21,41 @@ regions[secondary] = Secondary content
 regions[footer]    = Footer content
 regions[search]    = Search
 regions[quicklinks_top]   = Quick links topbar
+
+; Styles
+stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/base.css
+stylesheets[all][] = css/content.css
+stylesheets[all][] = css/forms.css
+stylesheets[all][] = css/footer.css
+stylesheets[all][] = css/page.css
+stylesheets[all][] = css/header.css
+stylesheets[all][] = css/navigation.css
+stylesheets[all][] = css/search.css
+stylesheets[all][] = css/highlight.css
+stylesheets[all][] = css/interface.css
+stylesheets[all][] = css/helper-classes.css
+stylesheets[all][] = css/book.css
+stylesheets[all][] = css/spruit_spnet.css
+stylesheets[all][] = css/spnet-panels.css
+stylesheets[all][] = css/spnet-webforms.css
+stylesheets[all][] = css/spnet-books.css
+stylesheets[all][] = css/spnet-sp-aanmelden.css
+stylesheets[all][] = css/spnet-person.css
+stylesheets[all][] = css/shame.css
+stylesheets[all][] = css/spnet-webforms.css
+
+; Media queries
+stylesheets[all][] = css/media--screen-max-480px.css
+stylesheets[all][] = css/media--screen-min-1080px.css
+
+; Unset these stylesheets
+settings[unset_styles][] = modules/system/system.menus.css
+settings[unset_styles][] = modules/system/system.messages.css
+settings[unset_styles][] = modules/system/system.theme.css
+settings[unset_styles][] = modules/field/theme/field.css
+settings[unset_styles][] = modules/node/node.css
+settings[unset_styles][] = modules/user/user.css
+settings[unset_styles][] = modules/book/book.css
+
+

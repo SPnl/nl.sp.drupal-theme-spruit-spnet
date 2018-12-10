@@ -1,7 +1,6 @@
-/* Mijn gegevens (webform) */
 #webform-client-form-4 .form-item label {
 	width: 120px;
-	display: inline-block; 
+	display: inline-block;
 	padding: .32em;
 }
 
@@ -11,7 +10,7 @@
 
 #webform-client-form-4 fieldset {
 	padding: 0;
-	border : none;
+	border: none;
 }
 
 .page-user-edit #edit-account label {
@@ -19,8 +18,8 @@
 	display: inline-block;
 }
 
-@media only screen and (max-width: 480px) {
-	.page-aanmelden .primary-content p{
+@media only screen and (max-width:480px) {
+	.page-aanmelden .primary-content p {
 		padding: 0 1em;
 	}
 
@@ -43,21 +42,20 @@
 		width: 90%;
 		max-width: 90%;
 		min-width: 90%;
-		padding: 0; 
+		padding: 0;
 		margin: 0 auto;
 		overflow: hidden;
 	}
+
 	.page-aanmelden #spaanmelden-form-lid input,
 	.page-aanmelden #spaanmelden-form-lid select {
 		max-width: 93%;
 		margin: 0 auto;
 	}
 
-
-
 	.page-aanmelden #spaanmelden-form-lid .form-submit {
 		width: 72%;
-		margin: .72em auto;;
+		margin: .72em auto;
 		display: block;
 		padding: .72em
 	}
@@ -67,7 +65,7 @@
 	}
 
 	.messages .message {
- 		padding: .1em 1.4em;
+		padding: .1em 1.4em;
 	}
-}
 
+}

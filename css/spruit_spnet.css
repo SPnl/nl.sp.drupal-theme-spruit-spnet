@@ -1,8 +1,3 @@
-/**
- * @file
- * SPnet overrides of the spruit theme.
- */
-
 .primary-content .content .meta,
 .primary-content .article-content > div,
 .primary-content .profile,
@@ -14,6 +9,7 @@
   padding-left: 1.4rem;
   padding-right: 1.4rem;
 }
+
 .primary-content .crm-container {
   max-width: 1180px;
   margin: 0 auto;
@@ -24,9 +20,11 @@
 .site-navigation ul {
   position: relative;
 }
+
 .site-navigation li a {
   font-size: 1.4em;
 }
+
 .site-navigation li ul {
   display: none;
   position: absolute;
@@ -36,12 +34,15 @@
   width: 100%;
   margin: 0 auto;
 }
+
 .site-navigation li:hover ul {
   display: block;
 }
+
 .site-navigation li ul li {
   padding: 0 0.6em;
 }
+
 .site-navigation li ul li a {
   font-size: 1.1em;
   color: #444;
@@ -58,6 +59,7 @@
   color: #444;
   padding: 0;
 }
+
 .page-civicrm .main-top-wrapper .breadcrumb ul {
   max-width: 1180px;
 }
@@ -74,10 +76,12 @@
 .breadcrumb ul {
   border-bottom: none;
 }
+
 .breadcrumb li:before {
   content: ' > ';
   color: #aaa;
 }
+
 .breadcrumb li:first-of-type:before {
   content: ''
 }
@@ -90,6 +94,7 @@
 .login-page .form-actions {
   margin-top: 15px;
 }
+
 .page-wrapper.login-page:after {
   position: absolute;
   bottom: 0;
@@ -101,14 +106,15 @@
   margin: 0;
   padding: 0;
 }
+
 .content ul.token-input-list li:before {
   width: 0 !important;
   content: '' !important;
 }
 
 .content iframe.gmap {
-  border:0; 
-  pointer-event: none!important; 
+  border: 0;
+  pointer-event: none !important;
 }
 
 .primary-content .article {
@@ -121,12 +127,13 @@
 .front .site-navigation .active {
   color: #f1f1f1;
 }
+
 .front .site-navigation:hover .active {
-  color: #f60000;
+  color: #ec1b23;
 }
 
 .primary-content .primary-action {
-  background: #000; 
+  background: #000;
   display: inline-block;
   padding: .14em .4em;
   font-family: 'HelveticaNeueLTStd-BdCn';
@@ -135,7 +142,7 @@
 }
 
 .primary-content .primary-action:hover {
-  background: #f60000; 
+  background: #ec1b23;
 }
 
 /* New user page */
@@ -145,8 +152,8 @@
 }
 
 .page-user-new form h3 {
-	font-size: 2.7em;
-	margin: 0;
+  font-size: 2.7em;
+  margin: 0;
 }
 
 /* Edit user page */
@@ -158,18 +165,22 @@
 .page-user-edit .site-footer a[href="/user/me/edit"] {
   display: none;
 }
+
 .page-user-edit .password-indicator,
 .page-user-edit .password-strength-title {
   display: none;
 }
+
 .page-user-edit .password-confirm .error {
-  background: #f60000;
+  background: #ec1b23;
   padding: .4em .72em;
   color: #fff;
 }
+
 .page-user-edit div.password-confirm {
   padding: .4em 0 1em;
 }
+
 .page-user-edit .password-confirm .ok {
   background: #5f7;
   padding: .4em .72em;
@@ -184,6 +195,7 @@
   margin-right: auto;
   overflow: visible;
 }
+
 .page-civicrm .main-top-wrapper {
   position: relative;
   max-width: 1180px;
@@ -193,21 +205,25 @@
 }
 
 /* Media: Mobile */
-@media only screen and (max-width: 420px) { 
+@media only screen and (max-width:420px) {
   .login-page .primary-content {
     padding: 0;
   }
+
   .login-page .primary-content header .title {
     font-size: 1.4em;
   }
+
   .login-page .primary-content form {
-   max-width: 280px;
+    max-width: 280px;
   }
+
 }
 
 /* Media: Large screens */
-@media only screen and (min-width: 1420px) { 
+@media only screen and (min-width:1420px) {
   .primary-content .pane-node-book-nav {
     width: 1120px;
   }
+
 }
