@@ -24,7 +24,6 @@
  +--------------------------------------------------------------------+
 *}
 {* this template is used for displaying event information *}
-
 {if $registerClosed }
 <div class="spacer"></div>
 <div class="messages status no-popup">
@@ -90,21 +89,6 @@
 {/if}
 <div class="vevent crm-event-id-{$event.id} crm-block crm-event-info-form-block">
   <div class="event-info">
-  {* Display top buttons only if the page is long enough to merit duplicate buttons *}
-  {if $event.summary or $event.description}
-    <div class="crm-actionlinks-top">
-      {crmRegion name="event-page-eventinfo-actionlinks-top"}
-        {if $allowRegistration}
-	        {if $event.id neq 1969}
-						<div class="action-link section register_link-section register_link-top">
-							<a href="{$registerURL}" title="{$registerText|escape:'html'}" class="button crm-register-button"><span>{$registerText}</span></a>
-						</div>-->
-          {/if}
-        {/if}
-      {/crmRegion}
-    </div>
-  {/if}
-
   {if $event.summary}
       <div class="crm-section event_summary-section">
         {$event.summary}
@@ -119,19 +103,18 @@
   <div class="crm-section event_date_time-section">
       <div class="label"><label>{ts}When{/ts}</label></div>
       <div class="content">
-            <abbr class="dtstart" title="{$event.event_start_date|crmDate}">
-            {$event.event_start_date|crmDate}</abbr>
+            <span>{$event.event_start_date|crmDate}</span>
             {if $event.event_end_date}
                 &nbsp; {ts}through{/ts} &nbsp;
                 {* Only show end time if end date = start date *}
                 {if $event.event_end_date|date_format:"%Y%m%d" == $event.event_start_date|date_format:"%Y%m%d"}
-                    <abbr class="dtend" title="{$event.event_end_date|crmDate:0:1}">
+                    <span>
                     {$event.event_end_date|crmDate:0:1}
-                    </abbr>
+                    </span>
                 {else}
-                    <abbr class="dtend" title="{$event.event_end_date|crmDate}">
+                    <span>
                     {$event.event_end_date|crmDate}
-                    </abbr>
+                    </span>
                 {/if}
             {/if}
         </div>
