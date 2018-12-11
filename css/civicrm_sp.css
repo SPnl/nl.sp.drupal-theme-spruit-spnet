@@ -496,7 +496,8 @@ li.token-input-input-token-facebook input {
 }
 
 .crm-container .crm-submit-buttons, .crm-container .action-link {
-    height: 34px !important;
+overflow: hidden;
+height: auto;
 }
 
 .crm-container .crm-button:hover, .crm-container .crm-button:focus, .crm-container input[type=submit]:hover, .crm-container input[type=button]:hover, .crm-container a.button:hover, .crm-container a.button:focus, #crm-container .crm-button:hover {
