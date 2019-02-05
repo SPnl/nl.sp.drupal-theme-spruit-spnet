@@ -44,6 +44,7 @@ stylesheets[all][] = css/spnet-sp-aanmelden.css
 stylesheets[all][] = css/spnet-person.css
 stylesheets[all][] = css/shame.css
 stylesheets[all][] = css/spnet-webforms.css
+stylesheets[all][] = css/cookie-bar.css
 
 ; Media queries
 stylesheets[all][] = css/media--screen-max-480px.css
