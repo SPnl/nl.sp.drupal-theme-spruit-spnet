@@ -1,21 +1,23 @@
 /* COMPONENTS */
 @import 'book-navigation';
-// @import 'civicrm-sp'; // not used??
+@import 'breadcrumbs';
+@import 'buttons';
 @import 'content';
 @import 'cookie-bar';
 @import 'footer';
 @import 'forms';
 @import 'header';
 @import 'highlight';
+@import 'images'; //legacy
 @import 'interface';
 @import 'media'; //legacy
 @import 'navigation';
 @import 'page';
 @import 'search';
-@import 'spnet-sp-aanmelden';
+@import 'spnet-base';
 @import 'spnet-books';
 @import 'spnet-panels';
 @import 'spnet-person';
+@import 'spnet-aanmelden';
 @import 'spnet-webform';
-@import 'spnet-webform-buurten';
-@import 'spruit-spnet';
+@import 'spnet-webform-buurten'; // old?

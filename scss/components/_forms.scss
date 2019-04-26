@@ -1,11 +1,9 @@
 /* LEGACY FORMS */
 
-/* =========================================================================
-   Basic Drupal form elements
-   ========================================================================== */
-
+// Basic Drupal form elements
 .form-item {
-	padding: .4em 0;
+	//padding: .4em 0;
+	margin-bottom: 1rem;
 }
 
 .form-item label {
@@ -18,7 +16,7 @@
 }
 
 .form-item .form-required {
-	color: #f60000;
+	color: $color1;
 }
 
 .form-item .form-text {
@@ -39,10 +37,10 @@
 }
 
 .form-submit {
-  	font-family: HelveticaInseratLTPro, Impact, 'Sans serif';
+  	font-family: $font-header;
   	font-weight: normal;
 	text-transform: uppercase;
-	background: #f60000;
+	background: $color1;
 	margin-right: .4em;
 	padding: .4em .72em;
 	color: #fff;
@@ -55,20 +53,17 @@
 	border: 1px solid #000;
 }
 
-/* Errors 
------------------------------------------------------------------------------*/
+// Errors
 .form-item .form-text.error {
 	background: #fee;
 	border: 2px solid #f66666;
 }
 
 
-/* Forms in primary content 
------------------------------------------------------------------------------*/
-
+// Forms in primary content 
 .primary-content form {
-	max-width: 960px;
-	margin: 0 auto;
+	//max-width: 960px;
+	//margin: 0 auto;
 }
 
 .primary-content fieldset {
@@ -78,7 +73,7 @@
 
 .primary-content legend {
 	padding: .4em .72em;
-        font-family: HelveticaNeueLTStd-Md, Sans-serif;
+        font-family: $font-strong;
 }
 
 #user-pass {
@@ -91,9 +86,7 @@
 	padding: .4em 0;
 }
 
-/*= Webform module elements
-------------------------------------------------------------- */
-
+// Webform module elements
 .content .webform-component-fieldset {
   display: inline-block;
   border: none;
@@ -102,7 +95,7 @@
 .content .webform-component-fieldset legend {
   padding: .4em .4em .4em 0;
   margin-bottom: 1em;
-  font-family: HelveticaNeueLTStd-BdCn, 'Sans serif';
+  font-family: $font-middle;
   font-size: 1.14em;
   color: #333;
   border-bottom: 2px solid #ddd;

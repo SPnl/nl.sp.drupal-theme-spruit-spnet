@@ -1,16 +1,17 @@
 /* LEGACY FOOTER */
 .site-footer {
   text-align: center;
-  color: #aaa;
+  color: #AAA;
 }
 
 .site-footer .block-menu {
   overflow: hidden;
-  background: #f60000;
+  background: $color1;
+  margin-bottom: 3rem;
 }
 
 .site-footer .block-menu a {
-  color: #fff;
+  color: #FFF;
 }
 
 .site-footer .block-menu .title {
@@ -28,12 +29,12 @@
 
 .site-footer .block-menu li a {
   display: inline-block;
-  padding: .4em 1em;
-  font-size: .9em;
+  padding: .4rem 1rem;
+  font-size: .9rem;
   text-decoration: none;
-  border: 1px solid #fff;
+  border: 1px solid #FFF;
   text-transform: uppercase;
-  font-family: HelveticaNeueLTStd-BdCn, 'Sans serif';
+  font-family: $font-middle;
 }
 
 .site-footer .block-menu li a:hover {
@@ -48,21 +49,21 @@
 .site-footer .block-menu:nth-of-type(2n) a {
   border: none;
   color: #000;
-  padding: 0 .14em;
+  padding: 0 .14rem;
   border-bottom: 2px solid #000;
 }
 
 .site-footer .block-menu:nth-of-type(2n) a:hover {
-  color: #f60000;
-  border-color: #f60000;
+  color: $color1;
+  border-color: $color1;
   background: none;
 }
 
 footer .copyright {
-  padding: .72em 1em;
+  padding: .72rem 1rem;
   margin: 1em auto;
-  border: 1px solid #aaa;
+  border: 1px solid #AAA;
   color: #888;
-  font-size: .8em;
+  font-size: .8rem;
   max-width: 320px;
 }

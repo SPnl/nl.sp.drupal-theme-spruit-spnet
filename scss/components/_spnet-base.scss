@@ -1,4 +1,7 @@
-/* LEGACY SPRUIT SPNET */
+
+/* LEGACY SPNET THEME */
+// END SHAME
+
 .primary-content .content .meta,
 .primary-content .article-content > div,
 .primary-content .profile,
@@ -17,74 +20,8 @@
   padding: 0 1.4em;
 }
 
-/* Navigation elements */
-.site-navigation ul {
-  position: relative;
-}
-
-.site-navigation li a {
-  font-size: 1.4em;
-}
-
-.site-navigation li ul {
-  display: none;
-  position: absolute;
-  bottom: -1em;
-  left: 0;
-  padding: 0 1em;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.site-navigation li:hover ul {
-  display: block;
-}
-
-.site-navigation li ul li {
-  padding: 0 0.6em;
-}
-
-.site-navigation li ul li a {
-  font-size: 1.1em;
-  color: #444;
-  padding: 0;
-}
-
-.page-civicrm .main-top-wrapper {
-  position: relative;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 1px solid #ddd;
-  font-size: 1.1em;
-  color: #444;
-  padding: 0;
-}
-
-.page-civicrm .main-top-wrapper .breadcrumb ul {
-  max-width: 1180px;
-}
-
-.page-civicrm header .title {
-  max-width: 1180px;
-  margin-top: 0;
-}
-
 .quicklinks-content {
   float: right;
-}
-
-.breadcrumb ul {
-  border-bottom: none;
-}
-
-.breadcrumb li:before {
-  content: ' > ';
-  color: #aaa;
-}
-
-.breadcrumb li:first-of-type:before {
-  content: ''
 }
 
 .page-user header .title {
@@ -188,23 +125,6 @@
   color: #333;
 }
 
-/* CiviCRM */
-.page-civicrm .primary-content {
-  position: relative;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: visible;
-}
-
-.page-civicrm .main-top-wrapper {
-  position: relative;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 1px solid #ddd;
-}
-
 /* Media: Mobile */
 @media only screen and (max-width:420px) {
   .login-page .primary-content {
@@ -227,4 +147,12 @@
     width: 1120px;
   }
 
+}
+
+// LINKS
+.content a {
+  color: $color1;
+  &:hover {
+    border-bottom: 2px solid $color1;
+  }
 }

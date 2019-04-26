@@ -1,19 +1,4 @@
 /* LEGACY NAVIGATION */
-nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-nav li {
-	display: inline-block;
-}
-
-nav li a {
-	display: inline-block;
-}
-
-
 .site-navigation {
 	text-align: center;
 	display: table-cell;
@@ -28,18 +13,19 @@ nav li a {
 .site-navigation ul {
 	max-width: 960px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .site-navigation li {
 	text-transform: uppercase;
-	font-family: HelveticaInseratLTPro, 'Sans serif';
+	font-family: $font-header;
 	font-weight: normal;
 	font-style: normal;
 }
 
 .site-navigation li a {
 	padding: .72em .4em;
-	color: #EC1B23;
+	color: $color1;
 	font-size: 1.4em;
 	text-decoration: none;
 }
@@ -52,36 +38,42 @@ nav li a {
 .site-navigation li a:hover {
 	color: #222;
 	background: #fff;
+	border-bottom: none;
+}
+// hidden menu ??
+.site-navigation li ul {
+  display: none; 
+  position: absolute;
+  bottom: -1em;
+  left: 0;
+  padding: 0 1em;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.breadcrumb {
-	margin: auto;
-	font-size: .9em;
+.site-navigation li:hover ul {
+  display: block;
 }
 
-.breadcrumb ul {
-	max-width: 960px;
-	margin: 0 auto;
-	border-bottom: 1px solid #ddd;
-	padding: 0  .4em .42em .4em;
+.site-navigation li ul li {
+  padding: 0 0.6em;
 }
 
-.breadcrumb a {
-	margin-right: .4em;
-	color: #aaa;
-	text-decoration: none;
+.site-navigation li ul li a { //inception here :D
+  font-size: 1.1em;
+  color: #444;
+  padding: 0;
 }
 
 .content .menu {
-	overflow: hidden;
+	overflow: hidden; // ?
 	padding: 0;
 }
 .content .menu li {
-	color: #EC1B23;
+	color: $color1;
 }
 
 /* Highlight content navigation (menus) */
-
 .highlight-content .block-menu .title {
 	display: none;
 }
@@ -103,7 +95,7 @@ nav li a {
 
 .highlight-content .block-menu li {
 	display: inline-block;
-	font-family: HelveticaNeueLTStd-BdCn, 'Sans serif';
+	font-family: $font-middle;
 	text-transform: uppercase;
 }
 

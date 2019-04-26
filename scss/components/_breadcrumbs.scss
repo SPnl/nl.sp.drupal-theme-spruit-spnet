@@ -1,0 +1,38 @@
+/* BREADCRUMBS */
+.breadcrumb {
+	margin: auto;
+	font-size: .9em;
+}
+.breadcrumb ul {
+	max-width: 960px;
+	margin: 0 auto;
+	//border-bottom: 1px solid #ddd;
+	border-bottom: none;
+	padding: 0  .4em .42em .4em;
+}
+.breadcrumb a {
+	margin-right: .4em;
+	color: #aaa;
+	text-decoration: none;
+}
+.breadcrumb li:before {
+  content: ' > ';
+  color: #aaa;
+}
+.breadcrumb li:first-of-type:before {
+  content: ''
+}
+
+.breadcrumb ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb li {
+  display: inline-block;
+}
+
+.breadcrumb li a {
+  display: inline-block;
+}

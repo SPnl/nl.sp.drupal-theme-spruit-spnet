@@ -23,7 +23,7 @@
 	max-width: 100%;
 }
 
-/* Highlighted pane */
+// HIGLIGHTED
 .directions .highlight {
 	background: #eee;
 }
@@ -32,7 +32,7 @@
 	color: #fff;
 }
 
-/* Custom menu pane */
+// CUSTOM MENU
 .custom-menu {
 	max-width: 960px;
 	margin: 0 auto;
@@ -40,9 +40,9 @@
 }
 
 .custom-menu .pane-title {
-	color: #f60000;
+	color: $color1;
 	margin: 0;
-	font-family: 'HelveticaNeueLTStd-BdCn';
+	font-family: $font-middle;
 	text-transform: none;
 }
 
@@ -56,10 +56,10 @@
 }
 
 .custom-menu ul li a {
-	color: #f60000;
+	color: $color1;
 	text-decoration: none;
-	border: 1px solid #f60000;
-	font-family: 'HelveticaNeueLTStd-BdCn';
+	border: 1px solid $color1;
+	font-family: $font-middle;
 	padding: .4em .72em;
 }
 
@@ -68,10 +68,10 @@
 	color: #fff;
 	background: #000;
 	border-color: #000;
-	font-family: 'HelveticaNeueLTStd-BdCn';
+	font-family: $font-middle;
 }
 
-/* Book navigation */
+// BOOK
 .pane-node-book-nav {
 	width: 960px;
 	margin: 0 auto;
@@ -93,7 +93,7 @@
 }
 
 .pane-node-book-nav .pane-content li a {
-	font-family: 'HelveticaNeueLTStd-BdCn';
+	font-family: $font-middle;
 	font-weight: normal;
 	color: #000;
 	border-bottom: 1px solid #ddd;
@@ -104,7 +104,7 @@
 .pane-node-terms .pane-content {
 	max-width: 960px;
 	margin: 0 auto;
-	font-family: HelveticaNeueLTStd-BdCn;
+	font-family: $font-middle;
 	color: #aaa;
 	padding: 0;
 	text-transform: uppercase;
@@ -115,7 +115,7 @@
 	padding: .72em 0;
 }
 
-/* Agenda pane */
+// AGENDA PANE
 .directions .pane-agenda-pane-agenda li {
 	margin: 0;
 	padding: 0 0 .32em 0;
@@ -124,9 +124,12 @@
 .directions .pane-agenda-pane-agenda li {
 	display: table;
 }
-
+.pane-agenda-pane-agenda a,
+.pane-agenda-pane-agenda a:hover, {
+	text-decoration: none; //quickfix
+}
 .pane-agenda-pane-agenda .date-display-single {
-	font-family: HelveticaNeueLTStd-BdCn;
+	font-family: $font-middle;
 	border-bottom: 2px solid #aaa;
 	display: table-cell;
 	padding: .32em 0;
@@ -143,11 +146,8 @@
 	vertical-align: middle;
 }
 
+// MEDIA
 @media only screen and (max-width:728px) {
-	.directions .panel-pane {
-		//height: auto;
-	}
-
 	.pane-node-terms .pane-content {
 		padding: 0 1.4em;
 	}
@@ -179,14 +179,13 @@
 	background: #FFF;
 	max-width: 1140px;
 	margin: 0 auto 2rem auto;
-	padding: 0; //remove padding from .container
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
 	h1 {
 		padding: .5rem 1rem;
 		margin: 0;
-		background: #EC1B23;
-		color: #FFF;
+		color: $color1;
 		width: 100%;
-		font-size: 1.2rem;
+		box-shadow: 0px 1px 0px 0px #0000000F;
 	}
 }
 
@@ -195,21 +194,11 @@
 	flex: 1;
 	min-width: 360px;
 	padding: 1rem;
-	box-shadow: 0px 1px 0px 1px #0000000f;
+	box-shadow: 1px 1px 0px 0px #0000000F;
 }
 
 #spnet_main .panel-seperator {
 	display: none;
-}
-
-#spnet_main .pane-content p {
-	margin: 0 0 1.4em 0;
-	padding: 0;
-}
-
-#spnet_main .pane-content p:last-child {
-	margin: 0;
-	padding: 0;
 }
 
 #spnet_main .pane-title,
@@ -217,20 +206,31 @@
 	text-transform: none;
 	font-family: $font-middle;
 }
-
-#spnet_main .panel-pane li {
-	font-size: 1rem;
-}
-
-#spnet_main .panel-pane a {
-	color: #1B6BEC;
-	&:hover {
-		border-bottom: 1px solid #1B6BEC;
+#spnet_main ul {
+	padding:0;
+	margin: 0 -1rem 1rem -1rem;
+	list-style: none;
+	li {
+		width: 100%;
+		padding: .25rem 1rem;
+		a {
+			width:100%;
+			&:before {
+				content: 'L';
+			    font-family: $sp-icons;
+			    padding-right: .25rem;
+			    color: $color1;
+			    font-size: 1rem;
+			}
+			&:hover {
+				text-decoration: none;
+				border: none;
+			}
+		}
+		&:hover{
+			background: #F1F1F1;
+		}
 	}
-}
-
-#spnet_main .pane-content ul {
-	padding-left: 2rem;
 }
 
 /* SPNET MENU */
@@ -255,7 +255,7 @@
 	display: block;
 	width: 100%;
 	padding: .25rem 1rem .25rem 2rem;
-	font-family: 'HelveticaNeueLTStd-BdCn';
+	font-family: $font-middle;
 	&:hover {
 		background: #333;
 		color: #FFF;
