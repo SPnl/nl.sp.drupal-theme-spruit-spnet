@@ -3,7 +3,10 @@
  * See civicrm settings: Beheer -> Systeem instellingen -> Bron-URLS
  *
  */
-/* THEME CIVICRM */
+/* Toolbar lelijk voor non-admins */
+.page-civicrm .toolbar-toggle-processed, .page-civicrm .toolbar-drawer {
+  display: none; }
+
 .crm-container th,
 .crm-container table.display thead th,
 .crm-container table thead.sticky th,
@@ -25,13 +28,43 @@
 .crm-container span.btn-slide {
   display: inline-block; }
 
+.crm-container hr {
+  margin: .5rem 0; }
+
 #crm-container ul li:before {
   content: '' !important;
   /* Geen tomaatjes voor willekeurige ul's */
   display: none; }
 
-#crm-container p, #crm-container ul, #crm-container ol, #crm-container h1, #crm-container h2, #crm-container h3, #crm-container h4, #crm-container h5, #crm-container h6, #crm-container blockquote, #crm-container form, #crm-container table, #crm-container pre, #crm-container code, #crm-container dl, #crm-container dt, #crm-container .meta {
+#crm-container p,
+#crm-container ul,
+#crm-container ol,
+#crm-container h1,
+#crm-container h2,
+#crm-container h3,
+#crm-container h4,
+#crm-container h5,
+#crm-container h6,
+#crm-container blockquote,
+#crm-container form,
+#crm-container table,
+#crm-container pre,
+#crm-container code,
+#crm-container dl,
+#crm-container dt,
+#crm-container .meta {
   padding: 0; }
+
+.crm-container h3 {
+  font-size: 2em;
+  background: none;
+  text-transform: none; }
+
+.crm-container h4 {
+  font-family: Verdana, Helvetica, sans-serif;
+  text-transform: none;
+  font-size: 1.4em;
+  font-weight: bold; }
 
 #crm-container .ac_results li {
   font-size: 0.9rem; }
@@ -86,7 +119,6 @@
 #crm-container .crm-pager {
   background: none; }
 
-/* Voormalige sidebar, nu gereduceerd tot twee quick links bovenaan */
 .quicklinks-content .block {
   float: right;
   height: 35px;
@@ -175,13 +207,8 @@
   background-color: #f9f9f9;
   border: 1px solid #eee; }
 
-.crm-container h4 {
-  font-family: Verdana, Helvetica, sans-serif;
-  text-transform: none;
-  font-size: 1.4em;
-  font-weight: bold; }
-
-.crm-container h3.nobackground, .crm-container .crm-form-block h3 {
+.crm-container h3.nobackground,
+.crm-container .crm-form-block h3 {
   font-family: Verdana, Helvetica, sans-serif;
   font-size: 1.8em;
   font-weight: normal; }
@@ -189,7 +216,9 @@
 .crm-container .crm-form-block {
   font-size: 1em; }
 
-.crm-container .content p, .crm-container .help p, .crm-container .help > div {
+.crm-container .content p,
+.crm-container .help p,
+.crm-container .help > div {
   font-size: 1.2em;
   display: block;
   padding: 0;
@@ -225,7 +254,8 @@
 #crm-container div.crm-summary-display_name .crm-icon {
   margin: 8px 8px 0 0; }
 
-.crm-container .ui-tabs .ui-tabs-nav, #crm-container div.crm-summary-row {
+.crm-container .ui-tabs .ui-tabs-nav,
+#crm-container div.crm-summary-row {
   background-color: #f9f9f9; }
 
 #crm-container .crm-contact-tabs-list {
@@ -264,7 +294,6 @@
   margin: 0; }
 
 /* Formulieren (Nieuwe persoon) */
-/* Form elements */
 #crm-container select {
   border: 1px solid #999;
   background: #fff;
@@ -290,7 +319,9 @@
   background-color: #666;
   padding: 6px 8px 6px 20px; }
 
-.crm-container .crm-accordion-header:hover, .crm-container .crm-accordion-header.active, .crm-container .crm-accordion-header.active:hover {
+.crm-container .crm-accordion-header:hover,
+.crm-container .crm-accordion-header.active,
+.crm-container .crm-accordion-header.active:hover {
   background-color: #444; }
 
 .crm-container .crm-accordion-body {
@@ -299,7 +330,8 @@
 .crm-container .crm-accordion-wrapper {
   margin-bottom: 10px; }
 
-.crm-container .crm-master-accordion-header.crm-accordion-header:hover, .crm-container .crm-collapsible .collapsible-title:hover {
+.crm-container .crm-master-accordion-header.crm-accordion-header:hover,
+.crm-container .crm-collapsible .collapsible-title:hover {
   color: #000; }
 
 /* Inschrijfformulier events: register-different hiden */
@@ -376,18 +408,13 @@ li.token-input-input-token-facebook input {
   line-height: 1.2em;
   padding-bottom: 0.6em; }
 
-/* Onderkop */
-.crm-container h3 {
-  font-size: 2em;
-  background: none;
-  text-transform: none; }
-
 /* Geen standaard block-labels */
 .content .crm-container form label {
   display: inline; }
 
-/* Links standaard zwart + underline */
-.crm-container a, .crm-container a:link, .crm-container a:visited {
+.crm-container a,
+.crm-container a:link,
+.crm-container a:visited {
   color: #333;
   text-decoration: underline;
   cursor: pointer; }
@@ -400,8 +427,13 @@ li.token-input-input-token-facebook input {
 .crm-container a:hover {
   color: #f60000; }
 
-/* Buttons */
-.crm-container a.button, .crm-container a.button:link, .crm-container a.button:visited, .crm-container input.form-submit, #crm-container input[type=button], #crm-container input.form-submit-inline, #crm-container .crm-button {
+.crm-container a.button,
+.crm-container a.button:link,
+.crm-container a.button:visited,
+.crm-container input.form-submit,
+#crm-container input[type=button],
+#crm-container input.form-submit-inline,
+#crm-container .crm-button {
   background: #444;
   border: 1px solid #333;
   text-shadow: none;
@@ -411,25 +443,35 @@ li.token-input-input-token-facebook input {
   font-family: HelveticaNeueLT-Light, sans-serif;
   text-transform: none; }
 
-.crm-container .crm-submit-buttons, .crm-container .action-link {
+.crm-container .crm-submit-buttons,
+.crm-container .action-link {
   overflow: hidden;
   height: auto; }
 
-.crm-container .crm-button:hover, .crm-container .crm-button:focus, .crm-container input[type=submit]:hover, .crm-container input[type=button]:hover, .crm-container a.button:hover, .crm-container a.button:focus, #crm-container .crm-button:hover {
+.crm-container .crm-button:hover,
+.crm-container .crm-button:focus,
+.crm-container input[type=submit]:hover,
+.crm-container input[type=button]:hover,
+.crm-container a.button:hover,
+.crm-container a.button:focus,
+#crm-container .crm-button:hover {
   background: #666;
   border: 1px solid #555; }
 
 .crm-container a.button:hover {
   color: #fff; }
 
-.crm-container .button:hover .icon, .crm-container .crm-button:hover .icon, .crm-container .button:hover .delete-icon {
+.crm-container .button:hover .icon,
+.crm-container .crm-button:hover .icon,
+.crm-container .button:hover .delete-icon {
   /* Icoontjes blijven gewoon wit: */
   background-image: url("../img/jquery-ui-FFFFFF.png") !important; }
 
 #crm-container .crm-button input[type=button], #crm-container .crm-button input.form-submit, #crm-container .crm-button input.form-submit-inline {
   padding: 2px 5px; }
 
-.crm-container .crm-tab-button a, .crm-container .ui-tabs .ui-tabs-nav li a {
+.crm-container .crm-tab-button a,
+.crm-container .ui-tabs .ui-tabs-nav li a {
   padding: 8px !important;
   font-size: 0.75em !important; }
 
@@ -491,10 +533,6 @@ form#CustomData .custom-group-Actief_SP input[type=radio] {
 form#CustomData .custom-group-Gemeentes td.html-adjust {
   min-width: 300px; }
 
-/* Toolbar lelijk voor non-admins */
-.page-civicrm .toolbar-toggle-processed, .page-civicrm .toolbar-drawer {
-  display: none; }
-
 /* CiviCRM-toolbar voor mensen zonder Drupal toolbar */
 .page-civicrm:not(.toolbar) header {
   margin-top: 27px; }
@@ -503,14 +541,12 @@ form#CustomData .custom-group-Gemeentes td.html-adjust {
 .page-civicrm #printer-friendly {
   display: none; }
 
-/* Public event pages */
 .page-civicrm-event-info .breadcrumb {
   display: none; }
 
 .page-civicrm-event-info .main-top-wrapper {
   display: none; }
 
-/* CiviCRM */
 .page-civicrm .main-top-wrapper {
   position: relative;
   max-width: 1180px;
@@ -535,7 +571,6 @@ form#CustomData .custom-group-Gemeentes td.html-adjust {
   margin-right: auto;
   overflow: visible; }
 
-/* Styles for Wizard Progress Bars */
 #crm-container ul.wizard-bar {
   border-collapse: collapse;
   padding: 0;
@@ -582,7 +617,6 @@ form#CustomData .custom-group-Gemeentes td.html-adjust {
   padding: .4em !important;
   color: #f60000; }
 
-/* Notifications */
 #crm-notification-container {
   width: 28vw;
   position: fixed;
@@ -698,7 +732,6 @@ form#CustomData .custom-group-Gemeentes td.html-adjust {
 span.crm-status-icon {
   display: inline-block; }
 
-/* Rolstoel custom field */
 #Register .crm-profile-name-Rolstoel_83 .content .crm-form-radio {
   display: block;
   float: left;

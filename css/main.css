@@ -1290,14 +1290,6 @@ footer .copyright {
   padding: .4em .72em;
   font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
 
-#user-pass {
-  text-align: center; }
-
-#user-pass label {
-  display: block;
-  width: 100%;
-  padding: .4em 0; }
-
 .content .webform-component-fieldset {
   display: inline-block;
   border: none;
@@ -1327,6 +1319,18 @@ footer .copyright {
 
 .content form .grippie {
   display: none; }
+
+.page-user form {
+  max-width: 960px;
+  margin: 0 auto; }
+
+#user-pass {
+  text-align: center; }
+
+#user-pass label {
+  display: block;
+  width: 100%;
+  padding: .4em 0; }
 
 /* LEGACY HEADER */
 .site-header {
@@ -2082,7 +2086,7 @@ footer .copyright {
 /* SPNET MAIN PANELS */
 #spnet_main .panel-pane {
   flex: 1;
-  min-width: 360px;
+  min-width: 328px;
   padding: 1rem;
   box-shadow: 1px 1px 0px 0px #0000000F; }
 

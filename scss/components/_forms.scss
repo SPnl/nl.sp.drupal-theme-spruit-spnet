@@ -76,16 +76,6 @@
         font-family: $font-strong;
 }
 
-#user-pass {
-	text-align: center;
-}
-
-#user-pass label {
-	display: block;
-	width: 100%;
-	padding: .4em 0;
-}
-
 // Webform module elements
 .content .webform-component-fieldset {
   display: inline-block;
@@ -116,4 +106,20 @@
 }
 .content form .grippie {
   display: none;
+}
+
+
+// USER LOGIN & FORGOTTEN/CHANGE PASW 
+.page-user form {
+    max-width: 960px; //needs grid
+    margin: 0 auto;
+}
+#user-pass {
+	text-align: center;
+}
+
+#user-pass label {
+	display: block;
+	width: 100%;
+	padding: .4em 0;
 }
