@@ -6,18 +6,18 @@
 .primary-content .article-content > div,
 .primary-content .profile,
 .primary-content .article {
-  display: block;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
+	//display: block;
+  	//max-width: 960px;
+ 	//margin-left: auto;
+ 	//margin-right: auto;
+ 	//padding-left: 1.4rem;
+ 	//padding-right: 1.4rem;
 }
 
 .primary-content .crm-container {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 0 1.4em;
+	//max-width: 1180px;
+	//margin: 0 auto;
+	//padding: 0 1.4em;
 }
 
 .quicklinks-content {
@@ -36,23 +36,6 @@
 .page-wrapper.login-page:after {
   position: absolute;
   bottom: 0;
-}
-
-/* Token input */
-.content ul.token-input-list {
-  max-width: auto;
-  margin: 0;
-  padding: 0;
-}
-
-.content ul.token-input-list li:before {
-  width: 0 !important;
-  content: '' !important;
-}
-
-.content iframe.gmap {
-  border: 0;
-  pointer-event: none !important;
 }
 
 .primary-content .article {
@@ -83,7 +66,7 @@
   background: #ec1b23;
 }
 
-/* New user page */
+// NEW USER
 .page-user-new .content-header .title {
   font-size: 1em;
   color: #aaa;
@@ -94,12 +77,12 @@
   margin: 0;
 }
 
-/* Edit user page */
+// EDIT USER
 .page-user-me-edit .site-footer .active-trail.active {
   display: none;
 }
 
-/* User edit page */
+// USER EDIT PAGE
 .page-user-edit .site-footer a[href="/user/me/edit"] {
   display: none;
 }
@@ -128,15 +111,15 @@
 /* Media: Mobile */
 @media only screen and (max-width:420px) {
   .login-page .primary-content {
-    padding: 0;
+	padding: 0;
   }
 
   .login-page .primary-content header .title {
-    font-size: 1.4em;
+	font-size: 1.4em;
   }
 
   .login-page .primary-content form {
-    max-width: 280px;
+	max-width: 280px;
   }
 
 }
@@ -144,15 +127,9 @@
 /* Media: Large screens */
 @media only screen and (min-width:1420px) {
   .primary-content .pane-node-book-nav {
-    width: 1120px;
+	width: 1120px;
   }
 
 }
 
-// LINKS
-.content a {
-  color: $color1;
-  &:hover {
-    border-bottom: 2px solid $color1;
-  }
-}
+

@@ -1075,6 +1075,7 @@ a.btn-text,
   background: #00cd69; }
 
 /* LEGACY CONTENT */
+.primary-content header h1.title,
 main.content {
   max-width: 960px;
   padding-left: 1rem;
@@ -1107,14 +1108,29 @@ main.content {
   text-decoration: none;
   color: inherit; }
 
+/* Token input */
+.content ul.token-input-list {
+  max-width: auto;
+  margin: 0;
+  padding: 0; }
+
+.content ul.token-input-list li:before {
+  width: 0 !important;
+  content: '' !important; }
+
+.content iframe.gmap {
+  border: 0;
+  pointer-event: none !important; }
+
+.content a {
+  color: #EC1B23; }
+  .content a:hover {
+    border-bottom: 2px solid #EC1B23; }
+
 /* Body sections in Primary content*/
 .primary-content .block-system,
 .primary-content .article-content .body {
   max-width: 100%; }
-
-.primary-content header .title {
-  margin: 0 auto;
-  padding: .4em; }
 
 .content .meta {
   color: #aaa; }
@@ -1392,6 +1408,14 @@ footer .copyright {
 .page-search .site-header .search-toggle a {
   color: #aaa; }
 
+@media screen and (max-width: 380px) {
+  .site-branding .site-logo {
+    height: 40px; }
+
+  .site-header .search-toggle {
+    text-align: right; }
+    .site-header .search-toggle a {
+      padding-right: 8px; } }
 /* LEGACY HIGHLIGHT */
 .highlight-content {
   background: #eee;
@@ -1531,13 +1555,12 @@ footer .copyright {
 
 .tabs ul {
   margin: 0 auto;
-  padding: 0 1.4em;
+  padding: 0 1rem;
   max-width: 960px; }
 
 .tabs li {
   display: inline-block;
-  padding: 0;
-  margin: 4px; }
+  padding: 0; }
 
 .tabs li a {
   color: #333;
@@ -1780,22 +1803,6 @@ footer .copyright {
   padding: .4em; }
 
 /* LEGACY SPNET THEME */
-.primary-content .content .meta,
-.primary-content .article-content > div,
-.primary-content .profile,
-.primary-content .article {
-  display: block;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem; }
-
-.primary-content .crm-container {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 0 1.4em; }
-
 .quicklinks-content {
   float: right; }
 
@@ -1847,7 +1854,6 @@ footer .copyright {
 .primary-content .primary-action:hover {
   background: #ec1b23; }
 
-/* New user page */
 .page-user-new .content-header .title {
   font-size: 1em;
   color: #aaa; }
@@ -1856,11 +1862,9 @@ footer .copyright {
   font-size: 2.7em;
   margin: 0; }
 
-/* Edit user page */
 .page-user-me-edit .site-footer .active-trail.active {
   display: none; }
 
-/* User edit page */
 .page-user-edit .site-footer a[href="/user/me/edit"] {
   display: none; }
 

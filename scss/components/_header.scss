@@ -64,12 +64,23 @@
 	}
 }
 
-
-
 .site-header .search-toggle a .text {
 	display: none;
 }
 
 .page-search .site-header .search-toggle a {
 	color: #aaa;
+}
+
+// quickfix header mobile
+@media screen and (max-width: 380px){
+	.site-branding .site-logo {
+		height: 40px;
+	}
+	.site-header .search-toggle {
+		text-align: right;
+		a {
+			padding-right: 8px;
+		}
+	}
 }
