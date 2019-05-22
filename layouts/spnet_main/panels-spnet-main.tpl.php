@@ -8,20 +8,61 @@
  *   - $content['right']: Content in the right column.
  */
 ?>
+
 <!-- MAIN WRAPPER -->
-<div class="flex">
+<div id="spnet_main" class="flex justify-content-left">
 
-  <?php if (!empty($content['spnet_menu'])) : ?>
-  <!-- MAIN MENU -->
-  <div id="spnet_menu">
-      <div class="flex flex-column flex-wrap">
-          <?php print $content['spnet_menu']; ?>
+
+  <!-- SIDEBAR -->
+  <div id="spnet_sidebar">
+    <div id="spnet_menu">
+      <!-- QUICK MENU -->
+      <div id="spnet_quick-menu">
+        <ul>
+          <?php if (!empty($content['spnet_mededeling'])) : ?>
+            <li><a class="js_scrolltolink" name="mededelingen">Mededelingen</a></li>
+          <?php endif; ?>
+          <?php if (!empty($content['spnet_dashboard'])) : ?>
+            <li><a class="js_scrolltolink" name="dashboard">Mijn SP</a></li>
+          <?php endif; ?>
+          <?php if (!empty($content['spnet_agenda'])) : ?>
+            <li><a class="js_scrolltolink" name="agenda">Agenda</a></li>
+          <?php endif; ?>
+          <?php if (!empty($content['spnet_verkiezingen'])) : ?>
+            <li><a class="js_scrolltolink" name="verkiezingen">Verkiezingen</a></li>
+          <?php endif; ?>
+          <?php if (!empty($content['spnet_campagnes'])) : ?>
+            <li><a class="js_scrolltolink" name="campagnes">Campagnes</a></li>
+          <?php endif; ?>
+          <?php if (!empty($content['spnet_organisatie'])) : ?>
+            <li><a class="js_scrolltolink" name="organisatie">Organisatie</a></li>
+          <?php endif; ?>
+          <?php if (!empty($content['spnet_landelijk'])) : ?>
+            <li><a class="js_scrolltolink" name="landelijk">Landelijk</a></li>
+          <?php endif; ?>
+          <?php if (!empty($content['spnet_afdeling'])) : ?>
+            <li><a class="js_scrolltolink" name="afdeling">Afdeling</a></li>
+          <?php endif; ?>
+          <?php if (!empty($content['spnet_informatie'])) : ?>
+            <li><a class="js_scrolltolink" name="informatie">Informatie en Scholing</a></li>
+          <?php endif; ?>
+          <?php if (!empty($content['spnet_algemeen'])) : ?>
+            <li><a class="js_scrolltolink" name="algemeen">Algemeen</a></li>
+          <?php endif; ?>
+        </ul>
       </div>
+      <!-- SPNET MENU -->
+      <?php if (!empty($content['spnet_menu'])) : ?>
+        <div class="flex flex-column flex-wrap">
+          <?php print $content['spnet_menu']; ?>
+        </div>
+      <?php endif; ?>
+    </div>
   </div>
-  <?php endif; ?>
+  
 
-  <!-- MAIN CONTENT -->
-  <div id="spnet_main" <?php if (!empty($css_id)) {print "id=\"$css_id\"";} ?>>
+  <!-- CONTENT -->
+  <div id="spnet_content" <?php if (!empty($css_id)) {print "id=\"$css_id\"";} ?>>
 
     <?php if (!empty($content['spnet_mededeling'])) : ?>
     <div class="flex flex-row flex-wrap section">
@@ -32,7 +73,7 @@
 
     <?php if (!empty($content['spnet_dashboard'])) : ?>
     <div class="flex flex-row flex-wrap section">
-        <h1 id="dashboard">Dashboard</h1>
+        <h1 id="dashboard">Mijn SP</h1>
         <?php print $content['spnet_dashboard']; ?>
     </div>
     <?php endif; ?>
@@ -53,7 +94,7 @@
 
     <?php if (!empty($content['spnet_campagnes'])) : ?>
     <div class="flex flex-row flex-wrap section">
-        <h1 id="campagne">Campagnes</h1>
+        <h1 id="campagnes">Campagnes</h1>
         <?php print $content['spnet_campagnes']; ?>
     </div>
     <?php endif; ?>
@@ -95,6 +136,7 @@
 
   </div><!-- END MAIN CONTENT -->
 </div><!-- END MAIN WRAPPER -->
+
 
 <!-- FOOTER -->
 <div id="spnet_footer">
