@@ -1,9 +1,10 @@
 /* COMPONENTS */
-@import 'book-navigation';
+@import 'books';
 @import 'breadcrumbs';
 @import 'buttons';
 @import 'content';
 @import 'cookie-bar';
+@import 'custom-menu'; //?
 @import 'footer';
 @import 'forms';
 @import 'header';
@@ -11,14 +12,17 @@
 @import 'images'; //legacy
 @import 'interface';
 @import 'media'; //legacy
+@import 'messages'; //drupal messages
 @import 'navigation';
-@import 'page';
+@import 'pager';
+@import 'primary-content';
+@import 'tabs'; //drupal tabs
 @import 'search';
 @import 'spnet-aanmelden';
-@import 'spnet-base';
-@import 'spnet-books';
-@import 'spnet-menu';
+@import 'spnet-main'; //overzicht logged in
+//@import 'spnet-menu';
 @import 'spnet-panels';
 @import 'spnet-person';
 @import 'spnet-webform';
 @import 'spnet-webform-buurten'; // old?
+@import 'user';

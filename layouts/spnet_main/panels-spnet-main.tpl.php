@@ -20,35 +20,46 @@
       <div id="spnet_quick-menu">
         <ul>
           <?php if (!empty($content['spnet_mededeling'])) : ?>
-            <li><a class="js_scrolltolink" name="mededelingen">Mededelingen</a></li>
+          <li><a class="js_scrolltolink" name="mededelingen">Mededelingen</a></li>
           <?php endif; ?>
-          <?php if (!empty($content['spnet_dashboard'])) : ?>
-            <li><a class="js_scrolltolink" name="dashboard">Mijn SP</a></li>
-          <?php endif; ?>
-          <?php if (!empty($content['spnet_agenda'])) : ?>
-            <li><a class="js_scrolltolink" name="agenda">Agenda</a></li>
-          <?php endif; ?>
-          <?php if (!empty($content['spnet_verkiezingen'])) : ?>
-            <li><a class="js_scrolltolink" name="verkiezingen">Verkiezingen</a></li>
-          <?php endif; ?>
-          <?php if (!empty($content['spnet_campagnes'])) : ?>
-            <li><a class="js_scrolltolink" name="campagnes">Campagnes</a></li>
-          <?php endif; ?>
-          <?php if (!empty($content['spnet_organisatie'])) : ?>
-            <li><a class="js_scrolltolink" name="organisatie">Organisatie</a></li>
-          <?php endif; ?>
+          
           <?php if (!empty($content['spnet_landelijk'])) : ?>
-            <li><a class="js_scrolltolink" name="landelijk">Landelijk</a></li>
+          <li><a class="js_scrolltolink" name="landelijk">Landelijk</a></li>
           <?php endif; ?>
+          
+          <?php if (!empty($content['spnet_dashboard'])) : ?>
+          <li><a class="js_scrolltolink" name="dashboard">Mijn SP</a></li>
+          <?php endif; ?>
+          
+          <?php if (!empty($content['spnet_agenda'])) : ?>
+          <li><a class="js_scrolltolink" name="agenda">Agenda</a></li>
+          <?php endif; ?>
+          
+          <?php if (!empty($content['spnet_verkiezingen'])) : ?>
+          <li><a class="js_scrolltolink" name="verkiezingen">Verkiezingen</a></li>
+          <?php endif; ?>
+          
+          <?php if (!empty($content['spnet_campagnes'])) : ?>
+          <li><a class="js_scrolltolink" name="campagnes">Campagnes</a></li>
+          <?php endif; ?>
+          
+          <?php if (!empty($content['spnet_organisatie'])) : ?>
+          <li><a class="js_scrolltolink" name="organisatie">Organisatie</a></li>
+          <?php endif; ?>        
+          
           <?php if (!empty($content['spnet_afdeling'])) : ?>
-            <li><a class="js_scrolltolink" name="afdeling">Afdeling</a></li>
+          <li><a class="js_scrolltolink" name="afdeling">Afdeling</a></li>
           <?php endif; ?>
+          
           <?php if (!empty($content['spnet_informatie'])) : ?>
-            <li><a class="js_scrolltolink" name="informatie">Informatie en Scholing</a></li>
+          <li><a class="js_scrolltolink" name="informatie">Informatie en Scholing</a></li>
           <?php endif; ?>
+          
           <?php if (!empty($content['spnet_algemeen'])) : ?>
-            <li><a class="js_scrolltolink" name="algemeen">Algemeen</a></li>
+          <li><a class="js_scrolltolink" name="algemeen">Algemeen</a></li>
           <?php endif; ?>
+          
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
       <!-- SPNET MENU -->
@@ -68,6 +79,13 @@
     <div class="flex flex-row flex-wrap section">
         <h1 id="mededelingen">Mededelingen</h1>
         <?php print $content['spnet_mededeling']; ?>
+    </div>
+    <?php endif; ?>
+
+    <?php if (!empty($content['spnet_landelijk'])) : ?>
+    <div class="flex flex-row flex-wrap section">
+        <h1 id="landelijk">Landelijk</h1>
+        <?php print $content['spnet_landelijk']; ?>
     </div>
     <?php endif; ?>
 
@@ -103,13 +121,6 @@
     <div class="flex flex-row flex-wrap section">
         <h1 id="organisatie">Organisatie</h1>
         <?php print $content['spnet_organisatie']; ?>
-    </div>
-    <?php endif; ?>
-
-    <?php if (!empty($content['spnet_landelijk'])) : ?>
-    <div class="flex flex-row flex-wrap section">
-        <h1 id="landelijk">Landelijk</h1>
-        <?php print $content['spnet_landelijk']; ?>
     </div>
     <?php endif; ?>
 

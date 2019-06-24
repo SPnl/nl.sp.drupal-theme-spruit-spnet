@@ -1,40 +1,42 @@
 /* LEGACY FORMS */
-
-// Basic Drupal form elements
-.form-item {
-	//padding: .4em 0;
-	margin-bottom: 1rem;
+.primary-content fieldset {
+	padding: 1rem;
+	margin: 0 0 1rem 0;
 }
 
+.primary-content legend {
+	padding: .4em .72em;
+    font-family: $font-strong;
+}
+
+
+.form-item {
+	margin-bottom: 1rem;
+}
 .form-item label {
 	font-weight: bold;
 }
-
 .form-item input {
 	outline: none;
 	max-width: 100%;
 }
-
 .form-item .form-required {
 	color: $color1;
 }
-
 .form-item .form-text {
 	padding: .4em;
 	background: #eee;
 	border: 1px solid #ddd;
 }
-
 .form-item .description {
 	color: #aaa;
 	font-size: .9em;
 	padding: .4em;
 }
-
 .form-item:hover .description {
 	color: #333;
-
 }
+
 
 .form-submit {
   	font-family: $font-header;
@@ -45,36 +47,20 @@
 	padding: .4em .72em;
 	color: #fff;
 	border: 1px solid #d00;
+	&:hover {
+		background: #000;
+		color: #fff;
+		border: 1px solid #000;
+	}
 }
 
-.form-submit:hover {
-	background: #000;
-	color: #fff;
-	border: 1px solid #000;
-}
 
 // Errors
 .form-item .form-text.error {
-	background: #fee;
-	border: 2px solid #f66666;
+	background: #f8d7da;
+	border: 2px solid $color1;
 }
 
-
-// Forms in primary content 
-.primary-content form {
-	//max-width: 960px;
-	//margin: 0 auto;
-}
-
-.primary-content fieldset {
-	padding: 0 1.4em 1em 1.4em;
-	margin-bottom: 1em;
-}
-
-.primary-content legend {
-	padding: .4em .72em;
-        font-family: $font-strong;
-}
 
 // Webform module elements
 .content .webform-component-fieldset {
@@ -106,20 +92,4 @@
 }
 .content form .grippie {
   display: none;
-}
-
-
-// USER LOGIN & FORGOTTEN/CHANGE PASW 
-.page-user form {
-    max-width: 960px; //needs grid
-    margin: 0 auto;
-}
-#user-pass {
-	text-align: center;
-}
-
-#user-pass label {
-	display: block;
-	width: 100%;
-	padding: .4em 0;
 }

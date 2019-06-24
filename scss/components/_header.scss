@@ -44,9 +44,9 @@
 
 .site-header .search-toggle {
 	display: table-cell;
-	width: 120px;
 	vertical-align: middle;
-	text-align:center;
+	text-align: right;
+	padding-right: 1rem;
 	border-top: 4px solid $color1;
 }
 

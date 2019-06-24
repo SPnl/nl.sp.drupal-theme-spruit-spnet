@@ -1,7 +1,14 @@
-/* LEGACY MEMBERFORM (from module) */
-.page-aanmelden * {
-    box-sizing: border-box;
+/* SPNET AANMELDEN */
+.page-aanmelden .primary-container {
+  max-width: 960px;
 }
+.page-aanmelden .breadcrumb {
+  display: none;
+}
+
+//END SHAME
+
+/* LEGACY MEMBERFORM (from module) */
 /* remove important after disabling css in main theme */
 .page-aanmelden .page-wrapper:after {
     background: #f1f1f1;
@@ -22,12 +29,10 @@
     background: #fff;
     text-align: left!important;
     color: #222!important;
-    padding: 1rem!important;
-    margin: 0;
 }
 .page-aanmelden form {
     background: #fff!important;
-    padding: 0 1rem 3rem 1rem!important;
+    padding: 0 0 3rem 0rem!important;
 }
 .page-aanmelden form .form_header img {
     max-width: calc(100% + 2rem);
@@ -352,10 +357,6 @@ span.field-prefix {
   padding: 0;
 }
 
-.page-aanmelden form {
-  padding: 0 1.4em;
-}
-
 .page-aanmelden form fieldset {
   border: none;
   border-bottom: 3px solid #f1f1f1;
@@ -454,11 +455,6 @@ span.field-prefix {
 }
 
 /* NEW */
-.page-aanmelden form,
-.page-aanmelden header.content-header { 
-  max-width: 960px; //needs to be fixed with grid
-  margin: 0 auto;
-}
 .page-aanmelden-lid .site-logo a {
     display: block;
     width: 150px; //cuts off spnet logo

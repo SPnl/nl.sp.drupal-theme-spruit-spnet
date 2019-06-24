@@ -1,7 +1,10 @@
 /* LEGACY SEARCH */
 .site-search {
-	background: #f60000;
-	padding: .72em;
+	background: $color1;
+	padding: 1rem;
+	margin-left: -1rem;
+	margin-right: -1rem;
+	margin-bottom: 1rem;
 }
 
 .block-search {
@@ -54,31 +57,12 @@
   border-top: 2px solid #000;
 }
 
-.primary-content .search-form {  
-	max-width: 960px;
-	margin: 0 auto; 
-}
-
-.page-search .primary-content .search-result {
-	background: #fff;
-	padding: 1em;
-}
-
-.page-search .primary-content .content-header .title {
-	display: none;
-}
-
 .page-search .site-header .search-toggle a {
 	color: #eee;
 }
 
 .page-search .form-type-searchfield label {
 	display: none;
-}
-
-.page-search .form-type-searchfield {
-	max-width: 720px;
-	margin: 0 auto;
 }
 
 .page-search .form-type-searchfield .form-text {

@@ -11,10 +11,12 @@ scripts[] = js/myfonts.js
 
 ; Fonts
 stylesheets[all][] = fonts/SPnet-icons.css
+stylesheets[all][] = fonts/freesans.css
 
 ; Panels
 plugins[panels][layouts] = layouts
 
+regions[menu] = Main menu
 regions[highlight] = Highlighted content
 regions[content]   = Primary content
 regions[secondary] = Secondary content

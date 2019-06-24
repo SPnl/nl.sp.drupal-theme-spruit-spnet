@@ -1,4 +1,12 @@
 /* SHAME */
+.front .node-teaser {
+  border-bottom: 1px solid #aaa; }
+
+/* Overview: Element containing a set of articles */
+.page .overview article {
+  margin: 0 auto 1em auto;
+  background: #fff; }
+
 #block-views-cursussen-block-1 {
   pointer-events: none; }
 
@@ -83,29 +91,5 @@
 
 .directions .field.body {
   padding: 0; }
-
-.page-node .primary-content .content table {
-  padding-left: 0;
-  padding-right: 0; }
-
-.page-node .primary-content .content td {
-  vertical-align: top; }
-
-.login-page {
-  text-align: center; }
-
-.inloggen-links,
-.inloggen-rechts {
-  min-width: 280px;
-  height: 448px;
-  margin: 1rem;
-  display: inline-block;
-  padding: 1rem;
-  border-bottom: 8px solid #eee;
-  text-align: left;
-  overflow: hidden; }
-
-.inloggen-links {
-  max-width: 360px; }
 
 /*# sourceMappingURL=shame.css.map */

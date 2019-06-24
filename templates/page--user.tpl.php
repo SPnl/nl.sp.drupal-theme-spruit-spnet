@@ -22,10 +22,13 @@ if ( ! user_is_logged_in()): ?>
 				</div>
 			</header>
 
-			<main>
-				<?php print $messages; ?>
+			
 
-				<div class="primary-content">
+			<div class="primary-content">
+				<div class="user-container">
+
+					<?php print $messages; ?>
+
 					<header class="content-header">
 						<h1 class="title">Inloggen op <?php print variable_get('site_name'); ?></h1>
 					</header>
@@ -42,15 +45,19 @@ if ( ! user_is_logged_in()): ?>
 							)
 						);
 					endif; ?>
-
-					<?php print render($tabs); ?>
+					
 					<?php print render($page['help']); ?>
 
 					<a id="primary-content"></a>
 					<?php print render($page['content']); ?>
-				</div>
 
-			</main>
+					<div class="bottom-tabs">
+						<?php print render($tabs); ?>
+					</div>
+
+				</div>
+			</div>
+
 			<footer class="site-footer">
 				<?php print render($page['footer']); ?>
 			</footer>
