@@ -33,7 +33,7 @@
 .primary-content {
 	background: #E2E2E2;
 	padding: 1rem 0;
-	min-height: calc(100vh - 136px); //quickfix to prevent footer floating mid page
+	min-height: calc(100vh - 208px); //quickfix to prevent footer floating mid page
 }
 @media screen and (min-width: 768px){
     .primary-content {
@@ -42,7 +42,7 @@
 }
 @media screen and (min-width: 1080px){
 	.primary-content {
-		min-height: calc(100vh - 166px); //quickfix to prevent footer floating mid page
+		min-height: calc(100vh - 235px); //quickfix to prevent footer floating mid page
 	}
 }
 /* PRIMARY CONTAINER */
