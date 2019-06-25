@@ -194,10 +194,7 @@ html {
 
 @media screen and (min-width: 1980px) {
   html {
-    font-size: 20px; } }
-@media screen and (min-width: 2560px) {
-  html {
-    font-size: 32px; } }
+    font-size: 18px; } }
 body {
   min-height: 100%;
   /* resize to full background */ }
@@ -1812,14 +1809,14 @@ footer .copyright {
 .primary-content {
   background: #E2E2E2;
   padding: 1rem 0;
-  min-height: calc(100vh - 136px); }
+  min-height: calc(100vh - 208px); }
 
 @media screen and (min-width: 768px) {
   .primary-content {
     padding: 3rem 0; } }
 @media screen and (min-width: 1080px) {
   .primary-content {
-    min-height: calc(100vh - 166px); } }
+    min-height: calc(100vh - 235px); } }
 /* PRIMARY CONTAINER */
 .primary-container {
   padding: 1rem;
