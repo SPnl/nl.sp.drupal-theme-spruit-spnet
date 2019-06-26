@@ -59,6 +59,10 @@
           <li><a class="js_scrolltolink" name="scholing">Scholing</a></li>
           <?php endif; ?>
 
+          <?php if (!empty($content['spnet_rood'])) : ?>
+          <li><a class="js_scrolltolink" name="rood">ROOD</a></li>
+          <?php endif; ?>
+
           <?php if (!empty($content['spnet_informatie'])) : ?>
           <li><a class="js_scrolltolink" name="informatie">Informatie</a></li>
           <?php endif; ?>       
@@ -149,6 +153,13 @@
     <div class="flex flex-row flex-wrap section">
         <h1 id="scholing">Scholing</h1>
         <?php print $content['spnet_scholing']; ?>
+    </div>
+    <?php endif; ?>
+
+    <?php if (!empty($content['spnet_rood'])) : ?>
+    <div class="flex flex-row flex-wrap section">
+        <h1 id="rood">ROOD</h1>
+        <?php print $content['spnet_rood']; ?>
     </div>
     <?php endif; ?>
 
