@@ -14,6 +14,7 @@ $plugin = array(
     'spnet_menu' => t('Hoofdmenu'),
     'spnet_mededeling' => t('Mededelingen'),
     'spnet_dashboard' => t('Dashboard'),
+    'spnet_mijnsp' => t('Mijn SP'),
     'spnet_agenda' => t('Agenda'),
     'spnet_landelijk' => t('Landelijk'),
     'spnet_afdeling' => t('Afdeling'),
@@ -21,7 +22,8 @@ $plugin = array(
     'spnet_verkiezingen' => t('Verkiezingen'),
     'spnet_campagnes' => t('Campagnes'),
     'spnet_algemeen' => t('Algemeen'),
-    'spnet_informatie' => t('Informatie en Scholing'),
+    'spnet_informatie' => t('Informatie'),
+    'spnet_scholing' => t('Scholing'),
     'spnet_footer' => t('Footer'),
   ),
 );

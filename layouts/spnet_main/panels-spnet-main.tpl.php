@@ -28,9 +28,13 @@
           <?php endif; ?>
           
           <?php if (!empty($content['spnet_dashboard'])) : ?>
-          <li><a class="js_scrolltolink" name="dashboard">Mijn SP</a></li>
+          <li><a class="js_scrolltolink" name="dashboard">Dashboard</a></li>
           <?php endif; ?>
           
+          <?php if (!empty($content['spnet_mijnsp'])) : ?>
+          <li><a class="js_scrolltolink" name="mijnsp">Mijn SP</a></li>
+          <?php endif; ?>
+
           <?php if (!empty($content['spnet_agenda'])) : ?>
           <li><a class="js_scrolltolink" name="agenda">Agenda</a></li>
           <?php endif; ?>
@@ -51,15 +55,18 @@
           <li><a class="js_scrolltolink" name="afdeling">Afdeling</a></li>
           <?php endif; ?>
           
-          <?php if (!empty($content['spnet_informatie'])) : ?>
-          <li><a class="js_scrolltolink" name="informatie">Informatie en Scholing</a></li>
+          <?php if (!empty($content['spnet_scholing'])) : ?>
+          <li><a class="js_scrolltolink" name="scholing">Scholing</a></li>
           <?php endif; ?>
-          
+
+          <?php if (!empty($content['spnet_informatie'])) : ?>
+          <li><a class="js_scrolltolink" name="informatie">Informatie</a></li>
+          <?php endif; ?>       
+                 
           <?php if (!empty($content['spnet_algemeen'])) : ?>
           <li><a class="js_scrolltolink" name="algemeen">Algemeen</a></li>
           <?php endif; ?>
           
-          <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
       <!-- SPNET MENU -->
