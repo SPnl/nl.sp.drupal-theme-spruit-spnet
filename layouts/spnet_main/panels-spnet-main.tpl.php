@@ -98,8 +98,15 @@
 
     <?php if (!empty($content['spnet_dashboard'])) : ?>
     <div class="flex flex-row flex-wrap section">
-        <h1 id="dashboard">Mijn SP</h1>
+        <h1 id="dashboard">Dashboard</h1>
         <?php print $content['spnet_dashboard']; ?>
+    </div>
+    <?php endif; ?>
+
+    <?php if (!empty($content['spnet_mijnsp'])) : ?>
+    <div class="flex flex-row flex-wrap section">
+        <h1 id="mijnsp">Mijn SP</h1>
+        <?php print $content['spnet_mijnsp']; ?>
     </div>
     <?php endif; ?>
 
@@ -138,9 +145,16 @@
     </div>
     <?php endif; ?>
 
+    <?php if (!empty($content['spnet_scholing'])) : ?>
+    <div class="flex flex-row flex-wrap section">
+        <h1 id="scholing">Scholing</h1>
+        <?php print $content['spnet_scholing']; ?>
+    </div>
+    <?php endif; ?>
+
     <?php if (!empty($content['spnet_informatie'])) : ?>
     <div class="flex flex-row flex-wrap section">
-        <h1 id="informatie">Informatie en Scholing</h1>
+        <h1 id="informatie">Informatie</h1>
         <?php print $content['spnet_informatie']; ?>
     </div>
     <?php endif; ?>
