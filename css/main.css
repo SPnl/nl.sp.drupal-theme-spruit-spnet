@@ -1809,14 +1809,11 @@ footer .copyright {
 .primary-content {
   background: #E2E2E2;
   padding: 1rem 0;
-  min-height: calc(100vh - 208px); }
+  min-height: calc(100vh - 166px); }
 
 @media screen and (min-width: 768px) {
   .primary-content {
     padding: 3rem 0; } }
-@media screen and (min-width: 1080px) {
-  .primary-content {
-    min-height: calc(100vh - 235px); } }
 /* PRIMARY CONTAINER */
 .primary-container {
   padding: 1rem;
