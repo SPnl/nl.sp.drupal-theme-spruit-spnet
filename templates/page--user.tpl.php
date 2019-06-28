@@ -25,7 +25,7 @@ if ( ! user_is_logged_in()): ?>
 			
 
 			<div class="primary-content">
-				<div class="user-container">
+				<div class="primary-container">
 
 					<?php print $messages; ?>
 

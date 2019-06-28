@@ -1626,8 +1626,18 @@ footer .copyright {
     margin-left: -2.1em; } }
 /* LOGIN-PAGE */
 .login-page .primary-container {
-  max-width: 800px; }
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #FFF; }
 
+.login-page .form-actions {
+  margin-top: 1rem;
+  text-align: center; }
+
+@media screen and (min-width: 500px) {
+  .login-page .primary-container {
+    padding: 2rem 3rem; } }
 /* LEGACY MEDIA */
 @media only screen and (max-width: 480px) {
   .page-wrapper:after {
@@ -1790,25 +1800,6 @@ footer .copyright {
   margin: 2.1em auto;
   display: block; }
 
-.primary-content .primary-action {
-  background: #000;
-  display: inline-block;
-  padding: .14em .4em;
-  font-family: 'HelveticaNeueLTStd-BdCn';
-  color: #fff;
-  text-decoration: none; }
-  .primary-content .primary-action:hover {
-    background: #EC1B23; }
-
-@media only screen and (max-width: 420px) {
-  .login-page .primary-content {
-    padding: 0; }
-
-  .login-page .primary-content header .title {
-    font-size: 1.4em; }
-
-  .login-page .primary-content form {
-    max-width: 280px; } }
 /* PRIMARY-CONTENT */
 .primary-content {
   background: #E2E2E2;
@@ -1849,10 +1840,14 @@ footer .copyright {
   .primary-container {
     width: 1140px;
     max-width: 100%; } }
-@media screen and (min-width: 2280px) {
-  .primary-container {
-    width: 50%;
-    max-width: 100%; } }
+/* needs adjustments
+@media screen and (min-width: 2280px){
+    .primary-container {
+        width: 50%; //replaces static width for large screen formats
+        max-width: 100%;
+    }
+}
+*/
 /* TABS */
 .tabs {
   width: 100%;

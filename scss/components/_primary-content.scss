@@ -6,29 +6,6 @@
   display: block;
 }
 
-.primary-content .primary-action {
-	background: #000;
-	display: inline-block;
-	padding: .14em .4em;
-	font-family: 'HelveticaNeueLTStd-BdCn';
-	color: #fff;
-	text-decoration: none;
-	&:hover {
-		background: $color1;
-	}
-}
-@media only screen and (max-width:420px) {
-	.login-page .primary-content {
-		padding: 0;
-	}
-	.login-page .primary-content header .title {
-		font-size: 1.4em;
-	}
-	.login-page .primary-content form {
-		max-width: 280px;
-	}
-}
-
 /* PRIMARY-CONTENT */
 .primary-content {
 	background: #E2E2E2;
@@ -82,9 +59,11 @@
         max-width: 100%;
     }
 }
+/* needs adjustments
 @media screen and (min-width: 2280px){
     .primary-container {
         width: 50%; //replaces static width for large screen formats
         max-width: 100%;
     }
 }
+*/
