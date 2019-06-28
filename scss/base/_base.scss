@@ -59,21 +59,21 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1;
     margin: 0 0 1rem 0;
 }
-// margin-top + font-size = 2rem
-h1 { font-size: 2.00rem; margin-top: 0.00rem; } // 32px
-h2 { font-size: 1.50rem; margin-top: 0.50rem; } // 24px
-h3 { font-size: 1.17rem; margin-top: 0.83rem; } // 18.72px
-h4 { font-size: 1.00rem; margin-top: 1.00rem; } // 16px
-h5 { font-size: 0.83rem; margin-top: 1.17rem; } // 13.28px
-h6 { font-size: 0.67rem; margin-top: 1.33rem; } // 10.72px
+// margin-top + font-size = 4rem
+h1 { font-size: 2.00rem; margin-top: 2.00rem; } // 32px
+h2 { font-size: 1.50rem; margin-top: 2.50rem; } // 24px
+h3 { font-size: 1.17rem; margin-top: 2.83rem; } // 18.72px
+h4 { font-size: 1.00rem; margin-top: 3.00rem; } // 16px
+h5 { font-size: 0.83rem; margin-top: 3.17rem; } // 13.28px
+h6 { font-size: 0.67rem; margin-top: 3.33rem; } // 10.72px
 
 @media screen and (max-width: 420px){
-    h1 { font-size: 1.50rem; margin-top: 0.50rem; } // 24px
-    h2 { font-size: 1.17rem; margin-top: 0.83rem; } // 18.72px
-    h3 { font-size: 1.00rem; margin-top: 1.00rem; } // 16px
-    h4 { font-size: 0.83rem; margin-top: 1.17rem; } // 13.28px
-    h5 { font-size: 0.67rem; margin-top: 1.33rem; } // 10.72px 
-    h6 { font-size: 0.67rem; margin-top: 1.33rem; } // 10.72px 
+    h1 { font-size: 1.50rem; margin-top: 2.50rem; } // 24px
+    h2 { font-size: 1.17rem; margin-top: 2.83rem; } // 18.72px
+    h3 { font-size: 1.00rem; margin-top: 3.00rem; } // 16px
+    h4 { font-size: 0.83rem; margin-top: 3.17rem; } // 13.28px
+    h5 { font-size: 0.67rem; margin-top: 3.33rem; } // 10.72px 
+    h6 { font-size: 0.67rem; margin-top: 3.33rem; } // 10.72px 
 }
 
 strong {

@@ -230,52 +230,52 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.00rem;
-  margin-top: 0.00rem; }
+  margin-top: 2.00rem; }
 
 h2 {
   font-size: 1.50rem;
-  margin-top: 0.50rem; }
+  margin-top: 2.50rem; }
 
 h3 {
   font-size: 1.17rem;
-  margin-top: 0.83rem; }
+  margin-top: 2.83rem; }
 
 h4 {
   font-size: 1.00rem;
-  margin-top: 1.00rem; }
+  margin-top: 3.00rem; }
 
 h5 {
   font-size: 0.83rem;
-  margin-top: 1.17rem; }
+  margin-top: 3.17rem; }
 
 h6 {
   font-size: 0.67rem;
-  margin-top: 1.33rem; }
+  margin-top: 3.33rem; }
 
 @media screen and (max-width: 420px) {
   h1 {
     font-size: 1.50rem;
-    margin-top: 0.50rem; }
+    margin-top: 2.50rem; }
 
   h2 {
     font-size: 1.17rem;
-    margin-top: 0.83rem; }
+    margin-top: 2.83rem; }
 
   h3 {
     font-size: 1.00rem;
-    margin-top: 1.00rem; }
+    margin-top: 3.00rem; }
 
   h4 {
     font-size: 0.83rem;
-    margin-top: 1.17rem; }
+    margin-top: 3.17rem; }
 
   h5 {
     font-size: 0.67rem;
-    margin-top: 1.33rem; }
+    margin-top: 3.33rem; }
 
   h6 {
     font-size: 0.67rem;
-    margin-top: 1.33rem; } }
+    margin-top: 3.33rem; } }
 strong {
   font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
   font-weight: normal; }
