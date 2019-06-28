@@ -2,8 +2,6 @@
 .site-search {
 	background: $color1;
 	padding: 1rem;
-	margin-left: -1rem;
-	margin-right: -1rem;
 	margin-bottom: 1rem;
 }
 
@@ -27,9 +25,8 @@
 	box-shadow: inset 2px 2px 0 rgba(2,2,2,.1);
 	border: 1px solid #f00;	
 	border-right: none;
-	min-width: 280px;
 	width: 100%;
-	max-width: 905px;
+	max-width: calc(100% - 54px);
 	display: block; 
 	float: left;
 	text-align: center;

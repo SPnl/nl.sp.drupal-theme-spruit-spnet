@@ -1902,8 +1902,6 @@ footer .copyright {
 .site-search {
   background: #EC1B23;
   padding: 1rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
   margin-bottom: 1rem; }
 
 .block-search {
@@ -1923,9 +1921,8 @@ footer .copyright {
   box-shadow: inset 2px 2px 0 rgba(2, 2, 2, 0.1);
   border: 1px solid #f00;
   border-right: none;
-  min-width: 280px;
   width: 100%;
-  max-width: 905px;
+  max-width: calc(100% - 54px);
   display: block;
   float: left;
   text-align: center; }
@@ -2486,8 +2483,8 @@ span.field-prefix {
 /* SPNET SIDEBAR */
 #spnet_sidebar {
   z-index: 1;
-  width: 300px;
-  min-width: 300px;
+  width: 280px;
+  min-width: 280px;
   max-height: 100vh;
   overflow-y: auto;
   position: fixed; }
@@ -2558,7 +2555,7 @@ span.field-prefix {
     display: block !important; }
 
   #spnet_content {
-    margin-left: 316px; } }
+    margin-left: 296px; } }
 /* LEGACY SPNET PERSON */
 .node-type-spnet-person .content .field-spnet-person-portrait img {
   float: left;
