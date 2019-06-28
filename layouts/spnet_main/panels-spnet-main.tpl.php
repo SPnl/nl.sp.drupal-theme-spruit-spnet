@@ -62,15 +62,7 @@
           <?php if (!empty($content['spnet_rood'])) : ?>
           <li><a class="js_scrolltolink" name="rood">ROOD</a></li>
           <?php endif; ?>
-
-          <?php if (!empty($content['spnet_informatie'])) : ?>
-          <li><a class="js_scrolltolink" name="informatie">Informatie</a></li>
-          <?php endif; ?>       
-                 
-          <?php if (!empty($content['spnet_algemeen'])) : ?>
-          <li><a class="js_scrolltolink" name="algemeen">Algemeen</a></li>
-          <?php endif; ?>
-          
+        
         </ul>
       </div>
       <!-- SPNET MENU -->
@@ -160,20 +152,6 @@
     <div class="flex flex-row flex-wrap section">
         <h1 id="rood">ROOD</h1>
         <?php print $content['spnet_rood']; ?>
-    </div>
-    <?php endif; ?>
-
-    <?php if (!empty($content['spnet_informatie'])) : ?>
-    <div class="flex flex-row flex-wrap section">
-        <h1 id="informatie">Informatie</h1>
-        <?php print $content['spnet_informatie']; ?>
-    </div>
-    <?php endif; ?>
-
-    <?php if (!empty($content['spnet_algemeen'])) : ?>
-    <div class="flex flex-row flex-wrap section">
-        <h1 id="algemeen">Algemeen</h1>
-        <?php print $content['spnet_algemeen']; ?>
     </div>
     <?php endif; ?>
 
