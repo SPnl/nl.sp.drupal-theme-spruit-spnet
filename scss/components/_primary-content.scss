@@ -8,7 +8,7 @@
 
 /* PRIMARY-CONTENT */
 .primary-content {
-	background: #E2E2E2;
+	background: $color2-bg;
 	padding: 1rem 0;
 	min-height: calc(100vh - 136px); //quickfix to prevent footer floating mid page
 }

@@ -142,15 +142,15 @@ th {
     text-align: left;
 }
 td {
-    border-bottom: 1px solid #E2E2E2;
+    border-bottom: 1px solid $color2-bg;
     padding: .5rem;
 }
 tbody > tr {
-    border-bottom: 1px solid #E2E2E2;
-    border-left: 1px solid #E2E2E2;
-    border-right: 1px solid #E2E2E2;
+    border-bottom: 1px solid $color2-bg;
+    border-left: 1px solid $color2-bg;
+    border-right: 1px solid $color2-bg;
     &:first-child {
-    border-top: 1px solid #E2E2E2;
+    border-top: 1px solid $color2-bg;
     }
 }
 tr:nth-of-type(odd) {
