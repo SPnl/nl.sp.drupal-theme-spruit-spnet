@@ -2430,7 +2430,8 @@ span.field-prefix {
 #spnet_content .panel-pane .pane-content h2 {
   text-transform: none;
   font-family: "HelveticaNeueLTStd-BdCn";
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  margin-top: 0; }
 
 #spnet_content ul {
   padding: 0;
