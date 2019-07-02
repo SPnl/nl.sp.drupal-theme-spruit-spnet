@@ -81,15 +81,4 @@
 .page-civicrm-event .event-info .action-link .crm-register-button:hover {
   background: #2b2b2b; }
 
-/* Directions list-style override */
-.directions .body ul li:before {
-  display: none; }
-
-.directions .body ul li {
-  padding-left: 0;
-  margin-left: 0; }
-
-.directions .field.body {
-  padding: 0; }
-
 /*# sourceMappingURL=shame.css.map */
