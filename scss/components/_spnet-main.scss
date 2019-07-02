@@ -29,7 +29,6 @@
 	background: #FFF;
 	max-width: 1140px;
 	margin: 0 auto 2rem auto;
-	box-shadow: $shadow-panel;
 	h1 {
 		padding: .5rem 1rem;
 		margin: 0;
@@ -129,10 +128,8 @@
     overflow-y: auto;
     position: fixed;
 }
-#spnet_menu {
-    background: #FFF;
-    box-shadow: $shadow-panel;
-}
+
+
 /* SPNET QUICK MENU */
 #spnet_quick-menu .scrolltolink.active {
     background: $color1;
@@ -142,7 +139,6 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    border-top: 1px solid #DDD;
 }
 #spnet_quick-menu a {
     display: block;
@@ -158,7 +154,11 @@
     }
 }
 
+
 /* SPNET MENU */
+#spnet_menu {
+    background: #FFF;
+}
 #spnet_menu h2 {
 	padding: .5rem 1rem;
 	margin: 0;

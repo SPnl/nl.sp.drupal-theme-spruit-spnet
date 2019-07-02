@@ -1636,7 +1636,7 @@ footer .copyright {
 
 @media screen and (min-width: 500px) {
   .login-page .primary-container {
-    padding: 2rem 3rem; } }
+    padding: 1rem 3rem 2rem 3rem; } }
 /* LEGACY MEDIA */
 @media only screen and (max-width: 480px) {
   .page-wrapper:after {
@@ -2394,8 +2394,7 @@ span.field-prefix {
 #spnet_content .section {
   background: #FFF;
   max-width: 1140px;
-  margin: 0 auto 2rem auto;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12); }
+  margin: 0 auto 2rem auto; }
   #spnet_content .section h1 {
     padding: .5rem 1rem;
     margin: 0;
@@ -2479,10 +2478,6 @@ span.field-prefix {
   overflow-y: auto;
   position: fixed; }
 
-#spnet_menu {
-  background: #FFF;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12); }
-
 /* SPNET QUICK MENU */
 #spnet_quick-menu .scrolltolink.active {
   background: #EC1B23;
@@ -2491,8 +2486,7 @@ span.field-prefix {
 #spnet_quick-menu ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-  border-top: 1px solid #DDD; }
+  margin: 0; }
 
 #spnet_quick-menu a {
   display: block;
@@ -2507,6 +2501,9 @@ span.field-prefix {
     color: #FFF; }
 
 /* SPNET MENU */
+#spnet_menu {
+  background: #FFF; }
+
 #spnet_menu h2 {
   padding: .5rem 1rem;
   margin: 0;
