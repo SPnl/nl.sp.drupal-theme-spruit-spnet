@@ -1,33 +1,36 @@
+/* SHAME */
+.front .node-teaser {
+  border-bottom: 1px solid #aaa; }
+
+/* Overview: Element containing a set of articles */
+.page .overview article {
+  margin: 0 auto 1em auto;
+  background: #fff; }
+
 #block-views-cursussen-block-1 {
-  pointer-events: none;
-}
+  pointer-events: none; }
 
 .page-node-138 #block-views-cursussen-block-1 {
   pointer-events: none;
   margin-top: 0;
-  padding-top: 0;
-}
+  padding-top: 0; }
 
 .page-node-138 .pane-node-body {
-  display: none;
-}
+  display: none; }
 
 #book-navigation-136 {
-  display: none;
-}
+  display: none; }
 
 .webform-client-form-373 .webform-component--telefoonnummer label,
 .webform-client-form-373 .webform-component--e-mail label,
 .webform-client-form-373 .webform-component--voornaam label,
 .webform-client-form-373 .webform-component--achternaam label {
   width: 128px !important;
-  display: inline-block;
-}
+  display: inline-block; }
 
 /* Overbodig, onverwijderbaar veld in kraskaarten-formulier */
 .page-node-198 .webform-component--email-adres---telefoonnummer {
-  display: none;
-}
+  display: none; }
 
 /* Spoedklus styling kandidaten partijbestuur */
 .page-congres-kandidaten-partijbestuur .pane-content h2 {
@@ -35,25 +38,14 @@
   font-family: HelveticaNeueLTStd-BdCn, 'Sans serif' !important;
   text-transform: none;
   font-size: .9em;
-  padding: 0;
-}
+  padding: 0; }
 
 .content .links {
   max-width: 960px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .not-logged-in .primary-action {
-  border: 1px solid #000;
-}
-
-/* Cut the NET from the SP-NET logo */
-.page-aanmelden-lid .site-logo a {
-  display: block;
-  width: 150px;
-  height: 84px;
-  overflow: hidden;
-}
+  border: 1px solid #000; }
 
 /* Overzicht aantal deelnemers cursus */
 .view-id-cursusoverzicht_aantal_deelenemers {
@@ -61,8 +53,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.4rem;
-  padding-right: 1.4rem;
-}
+  padding-right: 1.4rem; }
 
 /* FAQ */
 .field-faq-groep-titel .field-item {
@@ -72,48 +63,22 @@
   text-transform: uppercase;
   font-weight: normal;
   line-height: 1.14;
-  margin-bottom: .5em;
-}
+  margin-bottom: .5em; }
 
 .faqfield-answer li {
-  font-size: 1.14em;
-}
+  font-size: 1.14em; }
 
 .crm-event-id-1969 .event_date_time-section {
-  display: none;
-}
+  display: none; }
 
 .page-civicrm-event .event-info .action-link .crm-register-button {
   background: #ec1b23;
   border: none;
   font-family: 'HelveticaNeueLTStd-BdCn';
   text-transform: uppercase;
-  padding: 1em;
-}
+  padding: 1em; }
 
 .page-civicrm-event .event-info .action-link .crm-register-button:hover {
-  background: #2b2b2b;
-}
+  background: #2b2b2b; }
 
-/* Directions list-style override */
-.directions .body ul li:before {
-  display: none;
-}
-
-.directions .body ul li {
-  padding-left: 0;
-  margin-left: 0;
-}
-
-.directions .field.body {
-  padding: 0;
-}
-
-.page-node .primary-content .content table {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.page-node .primary-content .content td {
-  vertical-align: top;
-}
+/*# sourceMappingURL=shame.css.map */

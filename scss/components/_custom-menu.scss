@@ -1,0 +1,38 @@
+/* CUSTOM MENU */
+.custom-menu {
+	max-width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.custom-menu .pane-title {
+	color: $color1;
+	margin: 0;
+	font-family: $font-middle;
+	text-transform: none;
+}
+
+.custom-menu ul {
+	list-style: none;
+	padding: 0;
+}
+
+.custom-menu li {
+	display: inline-block;
+}
+
+.custom-menu ul li a {
+	color: $color1;
+	text-decoration: none;
+	border: 1px solid $color1;
+	font-family: $font-middle;
+	padding: .4em .72em;
+}
+
+.custom-menu ul li a:hover {
+	text-decoration: none;
+	color: #fff;
+	background: #000;
+	border-color: #000;
+	font-family: $font-middle;
+}

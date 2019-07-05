@@ -1,0 +1,86 @@
+/* LEGACY HEADER */
+.site-header {
+	overflow: hidden;
+	display: table;
+	width: 100%;
+
+    /* top-border */
+	background: #fff; //fallback
+	background: linear-gradient(to bottom, $color1 5px,#ffffff 5px);
+}
+
+.site-header .site-branding {
+	display: table-cell;
+	vertical-align: bottom;
+	padding: .72em;
+	width: 120px;
+	text-align: left;
+	vertical-align: middle;
+	a:hover {
+		border-bottom: none;
+	}
+}
+
+.site-branding .site-logo {
+	height: 52px;
+	display: inline-block;
+}
+
+.site-header .site-logo img {
+	height: 100%;
+	width: auto;
+}
+
+.site-header .site-name {
+	margin: 0;
+	padding: 0;
+	font-size: 1.4em;
+}
+
+.site-header .site-name a {
+	text-decoration: none;
+	color: #222;
+}
+
+.site-header .search-toggle {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+	padding-right: 1rem;
+	border-top: 4px solid $color1;
+}
+
+.site-header .search-toggle a {
+	color: $color1;
+	text-decoration: none;
+	font-size: 2.4em;
+	&:before {
+	font-family: "SPnet-icons";
+	content: "S";
+	}
+	&:hover {
+		color: #000;
+		border: none;
+	}
+}
+
+.site-header .search-toggle a .text {
+	display: none;
+}
+
+.page-search .site-header .search-toggle a {
+	color: #aaa;
+}
+
+// quickfix header mobile
+@media screen and (max-width: 380px){
+	.site-branding .site-logo {
+		height: 40px;
+	}
+	.site-header .search-toggle {
+		text-align: right;
+		a {
+			padding-right: 8px;
+		}
+	}
+}

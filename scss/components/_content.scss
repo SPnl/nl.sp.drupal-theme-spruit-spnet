@@ -1,0 +1,59 @@
+/* LEGACY CONTENT */
+// END SHAME
+.content .block,
+.content .node-teaser {
+	padding: 0;
+	margin: 0 auto;
+}
+
+.content header {
+	margin: 2em 0 0 0;
+}
+
+.content header .title {
+	margin: 0 auto;
+}
+
+
+
+.block header .title {
+	padding: 0;
+}
+
+.content .title a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Token input */
+.content ul.token-input-list {
+  max-width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.content ul.token-input-list li:before {
+  width: 0 !important;
+  content: '' !important;
+}
+
+.content iframe.gmap {
+  border: 0;
+  pointer-event: none !important;
+}
+@media only screen and (min-width: 1080px) {
+    .content img.align-right {
+    	margin-right: -2.1em;
+	}
+	.content img.align-left {
+    	margin-left: -2.1em;
+	}
+}
+
+.primary-content .block-system,
+.primary-content .article-content .body {
+	max-width: 100%;
+}
+.content .meta {
+	color: #aaa;
+}
