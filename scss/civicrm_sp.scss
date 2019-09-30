@@ -651,10 +651,21 @@ form#CustomData .custom-group-Gemeentes td.html-adjust {
   margin-top: 27px;
 }
 
+// change logo sp.net >>> sp using display hidden
 .page-civicrm-event.not-logged-in .site-header .site-branding { 
   overflow: hidden;
-  width: 150px;
+  width: 85px;
   display: block;
+}
+@media screen and (min-width: 381px){
+  .page-civicrm-event.not-logged-in .site-header .site-branding {
+    width: 110px;
+  }
+}
+@media screen and (min-width: 1080px){
+  .page-civicrm-event.not-logged-in .site-header .site-branding {
+    width: 130px;
+  }
 }
 .page-civicrm-event.not-logged-in .site-header .site-navigation {
   display: none;
