@@ -7,6 +7,18 @@
 .page-civicrm .toolbar-toggle-processed, .page-civicrm .toolbar-drawer {
   display: none; }
 
+.page-civicrm .primary-container {
+  width: 100%;
+  max-width: 1800px; }
+
+.page-civicrm-event-info .primary-container {
+  width: 100%;
+  max-width: 1200px;
+  padding-bottom: 3rem; }
+
+.page-civicrm table {
+  overflow-x: visible; }
+
 .crm-container th,
 .crm-container table.display thead th,
 .crm-container table thead.sticky th,
@@ -18,12 +30,6 @@
   padding: .42em .72em;
   text-align: left;
   vertical-align: top; }
-
-.crm-container table.dataTable td {
-  word-break: break-all; }
-
-#crm-container tr {
-  font-size: 1.2em; }
 
 .crm-container span.btn-slide {
   display: inline-block; }
@@ -299,10 +305,6 @@
   background: #fff;
   border: 1px solid #ccc; }
 
-#crm-container form {
-  max-width: 1180px;
-  overflow: visible; }
-
 #crm-container .form-text {
   padding: .14em; }
 
@@ -310,9 +312,6 @@
   font-size: 1em !important; }
 
 .crm-container .crm-form-block {
-  background: none !important; }
-
-.crm-container tr:nth-of-type(odd) {
   background: none !important; }
 
 .crm-container .crm-accordion-header {

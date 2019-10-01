@@ -8,6 +8,19 @@
 .page-civicrm .toolbar-toggle-processed, .page-civicrm .toolbar-drawer {
     display: none;
 }
+// quickfix
+.page-civicrm .primary-container {
+  width: 100%;
+  max-width: 1800px;
+}
+.page-civicrm-event-info .primary-container {
+  width: 100%;
+  max-width: 1200px;
+  padding-bottom: 3rem;
+}
+.page-civicrm table {
+  overflow-x: visible;
+}
 // END SHAME
 
 
@@ -25,10 +38,10 @@
   vertical-align: top;
 }
 .crm-container table.dataTable td {
-    word-break: break-all;
+  // word-break: break-all;
 }
 #crm-container tr {
-  font-size: 1.2em;
+  // font-size: 1.2em;
 }
 .crm-container span.btn-slide {
     display: inline-block;
@@ -359,8 +372,8 @@
   border: 1px solid #ccc;
 }
 #crm-container form {
-  max-width: 1180px;
-  overflow: visible;
+  //max-width: 1180px;
+  //overflow: visible;
 }
 #crm-container form *:focus { 
 
@@ -377,7 +390,7 @@
 }
 
 .crm-container tr:nth-of-type(odd) {
-    background: none !important;
+    // background: none !important;
 }
 
 

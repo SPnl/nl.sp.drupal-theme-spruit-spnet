@@ -319,7 +319,7 @@ table {
   width: 100%;
   max-width: 100%;
   margin-bottom: 1rem;
-  display: block;
+  display: table;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar; }
@@ -343,9 +343,6 @@ tbody > tr {
 
 tr:nth-of-type(odd) {
   background-color: rgba(0, 0, 0, 0.05); }
-
-tr:hover {
-  background-color: rgba(0, 0, 0, 0.2); }
 
 /* LAYOUT */
 *, ::after, ::before {
