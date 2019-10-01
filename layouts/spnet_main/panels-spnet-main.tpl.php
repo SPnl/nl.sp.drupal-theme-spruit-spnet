@@ -43,13 +43,13 @@
           <li><a class="js_scrolltolink" name="verkiezingen">Verkiezingen</a></li>
           <?php endif; ?>
           
+	  <?php if (!empty($content['spnet_organisatie'])) : ?>
+          <li><a class="js_scrolltolink" name="organisatie">Organisatie</a></li>
+          <?php endif; ?>
+
           <?php if (!empty($content['spnet_campagnes'])) : ?>
           <li><a class="js_scrolltolink" name="campagnes">Campagnes</a></li>
           <?php endif; ?>
-          
-          <?php if (!empty($content['spnet_organisatie'])) : ?>
-          <li><a class="js_scrolltolink" name="organisatie">Organisatie</a></li>
-          <?php endif; ?>        
           
           <?php if (!empty($content['spnet_afdeling'])) : ?>
           <li><a class="js_scrolltolink" name="afdeling">Afdeling</a></li>
@@ -120,17 +120,17 @@
     </div>
     <?php endif; ?>
 
-    <?php if (!empty($content['spnet_campagnes'])) : ?>
-    <div class="flex flex-row flex-wrap section">
-        <h1 id="campagnes">Campagnes</h1>
-        <?php print $content['spnet_campagnes']; ?>
-    </div>
-    <?php endif; ?>
-
     <?php if (!empty($content['spnet_organisatie'])) : ?>
     <div class="flex flex-row flex-wrap section">
         <h1 id="organisatie">Organisatie</h1>
         <?php print $content['spnet_organisatie']; ?>
+    </div>
+    <?php endif; ?>
+
+    <?php if (!empty($content['spnet_campagnes'])) : ?>
+    <div class="flex flex-row flex-wrap section">
+        <h1 id="campagnes">Campagnes</h1>
+        <?php print $content['spnet_campagnes']; ?>
     </div>
     <?php endif; ?>
 
