@@ -1,7 +1,7 @@
 /* VARIABLES */
 
 // FONTS
-$font-header: HelveticaInseratLTPro, sans-serif;
+$font-primary: HelveticaInseratLTPro, sans-serif;
 $font-middle: 'HelveticaNeueLTStd-BdCn';
 $font-strong: 'HelveticaNeueLTStd-Md','Helvetica Neue',Helvetica,'Roboto Sans','Segoe UI',Arial,'Lucida Grande',sans-serif;
 $font-italic: 'HelveticaNeueLTStd-LtIt', 'Helvetica Neue', Helvetica, 'Roboto Sans', 'Segoe UI', Arial, 'Lucida Grande', sans-serif;
@@ -43,3 +43,6 @@ $email: $color1;
 
 // BOX SHADOWS
 $shadow-panel: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+
+// SIZING
+$content-width: 1140px; // Maximum width of content
