@@ -2173,6 +2173,20 @@ input.button-primary:hover {
 .page-aanmelden .breadcrumb {
   display: none; }
 
+.page-aanmelden-lid .site-logo a {
+  display: block;
+  width: 130px;
+  height: 70px;
+  overflow: hidden; }
+
+@media only screen and (max-width: 768px) {
+  .page-aanmelden .site-logo a {
+    height: 32px !important;
+    width: 60px !important; } }
+@media only screen and (max-width: 1080px) {
+  .page-aanmelden .site-logo a {
+    height: 59px !important;
+    width: 110px !important; } }
 /* LEGACY MEMBERFORM (from module) */
 /* remove important after disabling css in main theme */
 .page-aanmelden .page-wrapper:after {
@@ -2288,7 +2302,6 @@ input.button-primary:hover {
   border-color: #faebcc;
   color: #8a6d3b; }
 
-/* EURO SIGN PREFIX CONTRIBUTIONS */
 .page-aanmelden .form-item-page-contribution-custom {
   position: relative;
   /* set parent relative */ }
@@ -2333,7 +2346,6 @@ span.field-prefix {
   font-size: 16px !important;
   color: #333; }
 
-/* MEMBERFORM NAVIGATION */
 .memberform-navigation {
   text-align: center; }
 
@@ -2374,7 +2386,6 @@ span.field-prefix {
   background: #fff;
   color: #ddd !important; }
 
-/* MEMBERFORM INPUT */
 #memberform_form_wrapper input::placeholder {
   color: #ccc;
   /* should be styled in form default */ }
@@ -2400,7 +2411,6 @@ span.field-prefix {
   border-bottom: 2px solid #ddd;
   padding-top: 1rem; }
 
-/* MEMBERFORM ACTION */
 .memberform-action {
   max-width: 480px;
   margin: 0 auto;
@@ -2430,7 +2440,6 @@ span.field-prefix {
 #memberform_form_wrapper .memberform-inform-button {
   text-align: center; }
 
-/* MEMBERFORM CALL BACK OR CONTINUE */
 #edit-action,
 #edit-action--2 {
   text-align: center;
@@ -2480,11 +2489,11 @@ span.field-prefix {
     margin-right: .5rem;
     font-size: 1.6em;
     line-height: 0;
-    vertical-align: -6px; }
+    vertical-align: -6px;
+    color: #EC1B23; }
 
   .page-aanmelden .site-header {
     display: none; } }
-/* LEGACY SPNET AANMELDEN */
 .page-aanmelden .content-header .title {
   color: #EC1B23;
   text-align: center; }
@@ -2495,7 +2504,6 @@ span.field-prefix {
 .page-aanmelden .main-top-wrapper {
   display: none; }
 
-/* Form */
 .page-aanmelden .spaanmelden-progress ul {
   list-style: none;
   padding: 0; }
@@ -2523,7 +2531,6 @@ span.field-prefix {
 .page-aanmelden form label {
   display: inline-block; }
 
-/* SP-lid aanmelden specifics */
 #spaanmelden-form-lid .form-item-personal-information-middlename input {
   width: 80px; }
 
@@ -2582,13 +2589,6 @@ span.field-prefix {
 
 #spaanmelden-form-lid td {
   vertical-align: top; }
-
-/* NEW */
-.page-aanmelden-lid .site-logo a {
-  display: block;
-  width: 150px;
-  height: 84px;
-  overflow: hidden; }
 
 /* SPNET MAIN */
 .logged-in.page-overzicht .primary-content {

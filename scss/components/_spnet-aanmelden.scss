@@ -1,9 +1,27 @@
 /* SPNET AANMELDEN */
 .page-aanmelden .primary-container {
-  max-width: 960px;
+    max-width: 960px;
 }
 .page-aanmelden .breadcrumb {
-  display: none;
+    display: none;
+}
+.page-aanmelden-lid .site-logo a {
+    display: block;
+    width: 130px; //cuts off spnet logo
+    height: 70px;
+    overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+    .page-aanmelden .site-logo a {
+      height: 32px !important;
+      width: 60px !important;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .page-aanmelden .site-logo a {
+      height: 59px !important;
+      width: 110px !important;
+    }
 }
 
 //END SHAME
@@ -29,6 +47,7 @@
     background: #fff;
     text-align: left!important;
     color: #222!important;
+    margin-top: 0;
 }
 .page-aanmelden form {
     background: #fff!important;
@@ -94,7 +113,6 @@
     box-shadow: 0 0 5px 0 #c8c8c8;
     border: 1px solid #888;
 }
-
 .page-aanmelden .messages {
     border: 1px solid;
     padding: .7rem 1rem;
@@ -123,7 +141,7 @@
 }
 
 
-/* EURO SIGN PREFIX CONTRIBUTIONS */
+// EURO SIGN PREFIX CONTRIBUTIONS
 .page-aanmelden .form-item-page-contribution-custom {
     position: relative; /* set parent relative */
 }
@@ -141,29 +159,24 @@ span.field-prefix {
 #memberform_form_wrapper input[type="radio"] {
   display: none;
 }
-
 #memberform_form_wrapper label.option {
   padding: 12px;
   border: 1px solid #ddd;
   cursor: pointer;
   overflow-wrap: break-word;
 }
-
 #memberform_form_wrapper label.option img {
   float: left;
   margin-right: 1rem;
 }
-
 #memberform_form_wrapper label.option span {
   vertical-align: top;
 }
-
 #memberform_form_wrapper input[type="radio"]:checked+label,
 #memberform_form_wrapper input[type="radio"]:hover+label {
     background: #f60000;
     color: #fff;
 }
-
 #memberform_form_wrapper .introduction p {
     margin: 1em auto 0 auto;
     padding: 0;
@@ -171,7 +184,8 @@ span.field-prefix {
     color: #333;
 }
 
-/* MEMBERFORM NAVIGATION */
+
+// MEMBERFORM NAVIGATION
 .memberform-navigation {
     text-align: center;
 }
@@ -212,7 +226,9 @@ span.field-prefix {
     background: #fff;
     color: #ddd!important;
 }
-/* MEMBERFORM INPUT */
+
+
+// MEMBERFORM INPUT
 #memberform_form_wrapper input::placeholder {
     color: #ccc; /* should be styled in form default */
 }
@@ -239,7 +255,9 @@ span.field-prefix {
     border-bottom: 2px solid #ddd;
     padding-top: 1rem;
 }
-/* MEMBERFORM ACTION */
+
+
+// MEMBERFORM ACTION
 .memberform-action {
     max-width: 480px;
     margin: 0 auto;
@@ -260,15 +278,16 @@ span.field-prefix {
     margin-right: 1em;
 }
 .btn.do-call-back {
-  padding: 1rem 2rem;
-  margin: 4rem 0;
-  font-size: 1.4rem;
+    padding: 1rem 2rem;
+    margin: 4rem 0;
+    font-size: 1.4rem;
+}
+#memberform_form_wrapper .memberform-inform-button {
+    text-align: center;
 }
 
-#memberform_form_wrapper .memberform-inform-button {
-  text-align: center;
-}
-/* MEMBERFORM CALL BACK OR CONTINUE */
+
+// MEMBERFORM CALL BACK OR CONTINUE
 #edit-action,
 #edit-action--2 {
     text-align: center;
@@ -283,182 +302,152 @@ span.field-prefix {
 }
 
 
+// SPECIAL MOBILE VERSION
+// Replaces logo for tomato
 @media only screen and (max-width: 768px) {
     .page-aanmelden .primary-content {
-      padding-top: 0;
+        padding-top: 0;
     }
     .page-aanmelden .site-navigation {
-      display: none;
+        display: none;
     }
     .page-aanmelden form h3 {
-      font-size: 1rem;
+        font-size: 1rem;
     }
     .page-aanmelden .form-item .form-text {
-      padding: .6rem .4rem .4rem .4rem;
+        padding: .6rem .4rem .4rem .4rem;
     }
     .page-aanmelden .site-logo a {
-      height: 32px !important;
-      width: 60px !important;
+        height: 32px !important;
+        width: 60px !important;
     }
     .page-aanmelden form fieldset {
-      padding: 0 .72em 0 .72em !important;
+        padding: 0 .72em 0 .72em !important;
     }
     .page-aanmelden .memberform-navigation {
-      padding: 0;
-      margin: 0 0 1em 0;
-
+        padding: 0;
+        margin: 0 0 1em 0;
     }
     .page-aanmelden .memberform-navigation .form-submit {
-      margin: 2px;
-      font-size: 14px;
-      background: #fff;
+        margin: 2px;
+        font-size: 14px;
+        background: #fff;
     }
     .page-aanmelden-lid .content-header .title:before {
-      content: 'T';
-      font-family: 'SPnet-icons';
-      display: inline-block; 
-      padding: 0;
-      margin-right: .5rem;
-      font-size: 1.6em;
-      line-height: 0;
-      vertical-align: -6px;
+        content: 'T';
+        font-family: 'SPnet-icons';
+        display: inline-block; 
+        padding: 0;
+        margin-right: .5rem;
+        font-size: 1.6em;
+        line-height: 0;
+        vertical-align: -6px;
+        color: $color1;
     }
     .page-aanmelden .site-header {
-      display: none;
+        display: none;
     }
 
 }
 
 
-/* LEGACY SPNET AANMELDEN */
+// LEGACY
 .page-aanmelden .content-header .title {
-  color: $color1;
-  text-align: center;
+    color: $color1;
+    text-align: center;
 }
-
 .page-aanmelden .site-navigation a {
-  color: #f1f1f1;
+    color: #f1f1f1;
 }
-
 .page-aanmelden .main-top-wrapper {
-  display: none;
+    display: none;
 }
-
-/* Form */
 .page-aanmelden .spaanmelden-progress ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
-
 .page-aanmelden form .step-title {
-  color: $color1;
-  font-size: 1.14em;
-  margin: 0;
-  padding: 0;
+    color: $color1;
+    font-size: 1.14em;
+    margin: 0;
+    padding: 0;
 }
-
 .page-aanmelden form fieldset {
-  border: none;
-  border-bottom: 3px solid #f1f1f1;
-  padding: 0 .72em 2.1em .72em;
-  overflow: hidden;
-}
-
-.page-aanmelden form fieldset:last-of-type {
-  border-bottom: none;
-}
-
-.page-aanmelden form legend {
-  margin: 0;
-  padding: 0;
-  font-family: $font-middle;
-}
-
-.page-aanmelden form label {
-  display: inline-block;
-}
-
-/* SP-lid aanmelden specifics */
-#spaanmelden-form-lid .form-item-personal-information-middlename input {
-  width: 80px;
-}
-
-#edit-personal-information-gender {
-  padding: .4em;
-}
-
-#spaanmelden-form-lid .form-item-personal-information-gender .form-type-radio {
-  display: inline-block;
-  padding: 1em;
-}
-
-#spaanmelden-form-lid .form-item-personal-information-gender .form-item label {
-  width: 40%;
-}
-
-#spaanmelden-form-lid .form-item-personal-information-birthdate label {
-  display: block;
-  width: 960px;
-}
-
-#spaanmelden-form-lid .form-item-personal-information-birthdate .form-item {
-  margin-right: .4em;
-}
-
-#spaanmelden-form-lid .form-item-personal-information-birthdate .form-item label {
-  width: 75px;
-  font-size: .9em;
-  color: #aaa;
-}
-
-#spaanmelden-form-lid .form-item-personal-information-birthdate .form-item select {
-  width: 100%;
-}
-
-#spaanmelden-form-lid [class*="form-item-personal-information-"] label {
-  width: 120px;
-  display: inline-block;
-}
-
-#spaanmelden-form-lid [class*="form-item-contact-"] label,
-#spaanmelden-form-lid [class*="form-item-address-"] label {
-  width: 172px;
-  display: inline-block;
-}
-
-#spaanmelden-form-lid .form-item-personal-information-birthdate label {
-  display: block;
-  padding-bottom: .4em;
-}
-
-#spaanmelden-form-lid .form-item-address-zipcode input {
-  width: 120px;
-}
-
-#spaanmelden-form-lid .form-item-rood-rood label {
-  width: 50%;
-}
-
-#spaanmelden-form-lid .form-disabled input {
-  border: 1px dashed #aaa;
-  background: #fff;
-}
-
-#spaanmelden-form-lid th {
-  text-align: left;
-  padding-right: 1em;
-  width: 180px;
-}
-
-#spaanmelden-form-lid td {
-  vertical-align: top;
-}
-
-/* NEW */
-.page-aanmelden-lid .site-logo a {
-    display: block;
-    width: 150px; //cuts off spnet logo
-    height: 84px;
+    border: none;
+    border-bottom: 3px solid #f1f1f1;
+    padding: 0 .72em 2.1em .72em;
     overflow: hidden;
 }
-// END SHAME
+.page-aanmelden form fieldset:last-of-type {
+    border-bottom: none;
+}
+.page-aanmelden form legend {
+    margin: 0;
+    padding: 0;
+    font-family: $font-middle;
+}
+.page-aanmelden form label {
+    display: inline-block;
+}
+
+
+// CUSTOM FORM ELEMENTS
+#spaanmelden-form-lid .form-item-personal-information-middlename input {
+    width: 80px;
+}
+#edit-personal-information-gender {
+    padding: .4em;
+}
+#spaanmelden-form-lid .form-item-personal-information-gender .form-type-radio {
+    display: inline-block;
+    padding: 1em;
+}
+#spaanmelden-form-lid .form-item-personal-information-gender .form-item label {
+    width: 40%;
+}
+#spaanmelden-form-lid .form-item-personal-information-birthdate label {
+    display: block;
+    width: 960px;
+}
+#spaanmelden-form-lid .form-item-personal-information-birthdate .form-item {
+    margin-right: .4em;
+}
+#spaanmelden-form-lid .form-item-personal-information-birthdate .form-item label {
+    width: 75px;
+    font-size: .9em;
+    color: #aaa;
+}
+#spaanmelden-form-lid .form-item-personal-information-birthdate .form-item select {
+    width: 100%;
+}
+#spaanmelden-form-lid [class*="form-item-personal-information-"] label {
+    width: 120px;
+    display: inline-block;
+}
+#spaanmelden-form-lid [class*="form-item-contact-"] label,
+#spaanmelden-form-lid [class*="form-item-address-"] label {
+    width: 172px;
+    display: inline-block;
+}
+#spaanmelden-form-lid .form-item-personal-information-birthdate label {
+    display: block;
+    padding-bottom: .4em;
+}
+#spaanmelden-form-lid .form-item-address-zipcode input {
+    width: 120px;
+}
+#spaanmelden-form-lid .form-item-rood-rood label {
+    width: 50%;
+}
+#spaanmelden-form-lid .form-disabled input {
+    border: 1px dashed #aaa;
+    background: #fff;
+}
+#spaanmelden-form-lid th {
+    text-align: left;
+    padding-right: 1em;
+    width: 180px;
+}
+#spaanmelden-form-lid td {
+    vertical-align: top;
+}
