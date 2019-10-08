@@ -214,7 +214,8 @@ span.field-prefix + input {
     font-size: 1rem;
     display: table-cell; // to prevent label text wrapping underneath
     float: left; // to prevent label text wrapping underneath
-    margin-top: -8px; // to prevent label text wrapping underneath
+    margin-top: -4px; // to prevent label text wrapping underneath
+    line-height: 1;
 }
 .form-type-radio input:checked + label:before,
 .form-type-checkbox input:checked + label:before {

@@ -1596,7 +1596,8 @@ span.field-prefix + input {
   font-size: 1rem;
   display: table-cell;
   float: left;
-  margin-top: -8px; }
+  margin-top: -4px;
+  line-height: 1; }
 
 .form-type-radio input:checked + label:before,
 .form-type-checkbox input:checked + label:before {
