@@ -1509,7 +1509,7 @@ fieldset {
 input::placeholder, textarea::placeholder {
   color: #ccc; }
 
-/* WEBFORM */
+/* DRUPAL FORM */
 .form-actions {
   margin: 0;
   text-align: right; }
@@ -1613,20 +1613,6 @@ span.field-prefix + input {
 .no-touch .form-type-checkbox:hover input + label:before {
   color: #aaa; }
 
-.voting .form-type-radio input[type="radio"] + label:before,
-.voting .form-type-checkbox input[type="checkbox"] + label:before {
-  background: #ffffff;
-  /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%);
-  /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
-  border-radius: 5px; }
-
 .form-item .form-select:focus,
 .form-item .form-textarea:focus,
 .form-item .form-text:focus {
@@ -1643,13 +1629,12 @@ input.button-primary {
   font-family: HelveticaInseratLTPro, sans-serif;
   text-transform: uppercase;
   background: #EC1B23;
-  padding: 16px 32px;
+  padding: 8px 16px;
   color: #fff;
   border: 1px solid #EC1B23;
   transition: all 0.2s ease;
   outline: none;
-  cursor: pointer;
-  min-width: 153px; }
+  cursor: pointer; }
 
 input.webform-previous {
   background: #fff;
@@ -1661,7 +1646,10 @@ input.button-primary:hover {
   color: #fff;
   border-color: #000; }
 
-/* Form styling custom classes */
+@media only screen and (max-width: 500px) {
+  .form-submit {
+    width: 100%;
+    margin-bottom: 8px; } }
 .horizontal {
   overflow: hidden; }
   .horizontal .form-item {
@@ -1686,16 +1674,26 @@ input.button-primary:hover {
   background-color: #333;
   color: #fff; }
 
-@media only screen and (max-width: 500px) {
-  .form-submit {
-    width: 100%;
-    margin-bottom: 8px; } }
 .required.error {
   background: #f2dede; }
   .required.error::placeholder {
     color: #d4aeae;
     opacity: 1;
     /* Firefox */ }
+
+.voting .form-type-radio input[type="radio"] + label:before,
+.voting .form-type-checkbox input[type="checkbox"] + label:before {
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  border-radius: 5px; }
 
 /* LEGACY HEADER */
 .site-header {
@@ -2196,7 +2194,8 @@ input.button-primary:hover {
 .page-aanmelden header h1 {
   background: #fff;
   text-align: left !important;
-  color: #222 !important; }
+  color: #222 !important;
+  margin-top: 0; }
 
 .page-aanmelden form {
   background: #fff !important;

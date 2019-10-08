@@ -96,7 +96,7 @@
 }
 
 */
-// NEW
+
 /* BASIC FORM ELEMENTS */
 form {
     max-width: $content-width;
@@ -118,7 +118,7 @@ input,textarea {
   }
 }
 
-/* WEBFORM */
+/* DRUPAL FORM */
 .form-actions {
     //padding: 0 16px;
     margin: 0;
@@ -137,7 +137,6 @@ input,textarea {
     width: 100%;
     text-overflow: ellipsis;
 }
-
 .form-item label {
     display: inline-block;
     margin-bottom: 4px;
@@ -152,6 +151,7 @@ input,textarea {
         font-size: 1.125rem;
     }
 }
+
 
 // ADDS INLINE PREFIX USING FLOAT
 span.field-prefix {
@@ -187,6 +187,8 @@ span.field-prefix + input {
     color: $color3;
     font-family: $font-strong;
 }
+
+
 // RADIOS AND CHECKBOXES
 .form-checkboxes .form-item,
 .form-radios .form-item {
@@ -232,18 +234,6 @@ span.field-prefix + input {
 .no-touch .form-type-checkbox:hover input + label:before {
     color: #aaa;
 }
-// RADIOS AND CHECKBOXES - VOTING STYLE
-// add a .voting class as wrapper
-.voting .form-type-radio input[type="radio"] + label:before,
-.voting .form-type-checkbox input[type="checkbox"] + label:before {
-    background: #ffffff; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#ffffff 51%,#000000 57%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, #ffffff 0%,#ffffff 51%,#000000 57%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    border-radius: 5px;
-}
-
 .form-item .form-select:focus,
 .form-item .form-textarea:focus,
 .form-item .form-text:focus, {
@@ -254,19 +244,22 @@ span.field-prefix + input {
 input[type="file"] {
     margin-bottom: .5rem; //adds extra margin between submit button and input for mobile
 }
+
+
+// FORM BUTTON STYLE
 input.form-submit,
 input.webform-previous,
 input.button-primary {
     font-family: $font-primary;
     text-transform: uppercase;
     background: $color1;
-    padding: 16px 32px;
+    padding: 8px 16px;
     color: #fff;
     border: 1px solid $color1;
     transition: all 0.2s ease;
     outline:none; //disable browser default focus
     cursor: pointer;
-    min-width: 153px;
+    //min-width: 153px;
 }
 input.webform-previous {
     background: #fff;
@@ -278,9 +271,15 @@ input.button-primary:hover {
     color:#fff;
     border-color:#000;
 }
+@media only screen and (max-width:500px){
+    .form-submit {
+      width:100%;
+      margin-bottom: 8px;
+    }
+}
 
-/* Form styling custom classes */
 
+// ?
 .horizontal {
   overflow: hidden;
   .form-item {
@@ -313,13 +312,6 @@ input.button-primary:hover {
   }
 }
 
-@media only screen and (max-width:500px){
-    .form-submit {
-      width:100%;
-      margin-bottom: 8px;
-    }
-}
-
 // INPUT ERROR / VALID
 .required.valid {
     //background: green;
@@ -330,4 +322,17 @@ input.button-primary:hover {
         color: #d4aeae;
         opacity: 1; /* Firefox */
     }
+}
+
+// CUSTOM STYLING
+// RADIOS AND CHECKBOXES - VOTING STYLE
+// add a .voting class as wrapper to a field
+.voting .form-type-radio input[type="radio"] + label:before,
+.voting .form-type-checkbox input[type="checkbox"] + label:before {
+    background: #ffffff; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#ffffff 51%,#000000 57%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #ffffff 0%,#ffffff 51%,#000000 57%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    border-radius: 5px;
 }
