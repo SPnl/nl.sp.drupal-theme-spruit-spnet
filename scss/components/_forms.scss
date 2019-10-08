@@ -157,7 +157,7 @@ input,textarea {
 span.field-prefix {
     float: left;
     width: 2rem; 
-    height: 2.6rem; //quickfix
+    height: 2.75rem; //quickfix
     background: #ddd;
     border: 1px solid #ddd;
     padding: .72rem .5rem .72rem .5rem;
@@ -281,36 +281,41 @@ input.button-primary:hover {
 
 // ?
 .horizontal {
-  overflow: hidden;
-  .form-item {
-    display: block;
-    float: left;
-    overflow: hidden;
-    height: auto;
-    margin-right: 16px;
-  }
+	overflow: hidden;
+		.form-item {
+	display: block;
+	float: left;
+	overflow: hidden;
+	height: auto;
+	margin-right: 16px;
+	}
+}
+.block-select .form-item {
+	label {
+		border: 2px solid #333;
+		padding: 16px 24px;
+		background: #fafafa;
+		display: block;
+		cursor: pointer;
+		&:hover{
+			border-color: $color1;
+			color: $color1;
+		}
+	}
+	input {
+		display: none;
+	}
+	input:checked + label {
+		background-color: #333;
+		color: #fff;
+	}
 }
 
-.block-select .form-item {
-  label {
-    border: 2px solid #333;
-    padding: 16px 24px;
-    background: #fafafa;
-    display: block;
-    cursor: pointer;
-    &:hover{
-      border-color: $color1;
-      color: $color1;
-    }
-  }
-  input {
-    display: none;
-  }
-  input:checked + label {
-    background-color: #333;
-    color: #fff;
-  }
+// DATE FIELD MODULE
+.container-inline-date .date-padding {
+    margin-bottom: 1rem;
 }
+
 
 // INPUT ERROR / VALID
 .required.valid {
@@ -323,6 +328,7 @@ input.button-primary:hover {
         opacity: 1; /* Firefox */
     }
 }
+
 
 // CUSTOM STYLING
 // RADIOS AND CHECKBOXES - VOTING STYLE
