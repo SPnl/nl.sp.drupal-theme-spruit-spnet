@@ -1394,87 +1394,226 @@ footer .copyright {
   padding-top: 32px; }
 
 /* LEGACY FORMS */
-.primary-content fieldset {
-  padding: 1rem;
-  margin: 0 0 1rem 0; }
+/*
+.form-item .form-required {
+	color: $color1;
+}
+// Errors
+.form-item .form-text.error {
+	background: #f8d7da;
+	border: 2px solid $color1;
+}
+.content form .grippie {
+  display: none;
+}
 
-.primary-content legend {
-  padding: .4em .72em;
-  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
+*/
+/* BASIC FORM ELEMENTS */
+form {
+  max-width: 1140px;
+  margin: auto; }
 
-.form-item {
+legend {
+  font-size: 1.5rem;
+  font-family: HelveticaInseratLTPro, sans-serif;
+  text-transform: uppercase;
   margin-bottom: 1rem; }
 
+fieldset {
+  padding: 0 1rem;
+  margin: 2rem 0; }
+
+input::placeholder, textarea::placeholder {
+  color: #ccc; }
+
+/* DRUPAL FORM */
+.form-actions {
+  margin: 0;
+  text-align: right; }
+
+.form-item {
+  margin-top: 0;
+  margin-bottom: 16px; }
+
+.form-select {
+  padding: 8px;
+  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  font-size: 1rem;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  width: 100%;
+  text-overflow: ellipsis; }
+
 .form-item label {
-  font-weight: bold; }
-
-.form-item input {
-  outline: none;
-  max-width: 100%; }
-
-.form-item .form-required {
-  color: #EC1B23; }
-
-.form-item .form-text {
-  padding: .4em;
-  background: #eee;
-  border: 1px solid #ddd; }
-
-.form-item .description {
-  color: #aaa;
-  font-size: .9em;
-  padding: .4em; }
-
-.form-item:hover .description {
-  color: #333; }
-
-.form-submit {
-  font-family: HelveticaInseratLTPro, sans-serif;
-  font-weight: normal;
-  text-transform: uppercase;
-  background: #EC1B23;
-  margin-right: .4em;
-  padding: .4em .72em;
-  color: #fff;
-  border: 1px solid #d00; }
-  .form-submit:hover {
-    background: #000;
-    color: #fff;
-    border: 1px solid #000; }
-
-.form-item .form-text.error {
-  background: #f8d7da;
-  border: 2px solid #EC1B23; }
-
-.content .webform-component-fieldset {
   display: inline-block;
-  border: none;
-  padding: 0; }
-
-.content .webform-component-fieldset legend {
-  padding: .4em .4em .4em 0;
-  margin-bottom: 1em;
+  margin-bottom: 4px;
+  margin-top: 6px;
+  font-weight: normal;
   font-family: "HelveticaNeueLTStd-BdCn";
-  font-size: 1.14em;
-  color: #333;
-  border-bottom: 2px solid #ddd;
+  letter-spacing: .3px;
   width: 100%; }
 
-.content .webform-component-fieldset .form-item .form-text {
-  float: right; }
+@media screen and (min-width: 768px) {
+  .form-item label {
+    font-size: 1.125rem; } }
+span.field-prefix {
+  float: left;
+  width: 2rem;
+  height: 2.75rem;
+  background: #ddd;
+  border: 1px solid #ddd;
+  padding: .72rem .5rem .72rem .5rem;
+  text-align: center;
+  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
 
-.webform-component-fieldset .webform-component-textfield {
-  padding: 1em 0;
-  display: block; }
+span.field-prefix + input {
+  width: calc(100% - 2rem) !important; }
 
-.content .webform-component-fieldset .form-item label {
-  padding-right: .4em; }
+.form-required {
+  color: #EC1B23; }
 
-.content .webform-component-fieldset .webform-container-inline {
-  display: inline-block; }
+.form-item .description {
+  font-size: 0.85em;
+  color: #888;
+  padding-top: 5px; }
 
-.content form .grippie {
+.form-item .form-text,
+.form-item .form-textarea {
+  max-width: 100%;
+  width: 100%;
+  padding: .72rem;
+  background: #fafafa;
+  border: 1px solid #DDDDDD;
+  color: #333333;
+  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
+
+.form-checkboxes .form-item,
+.form-radios .form-item {
+  display: table; }
+
+.form-type-radio input[type="radio"] + label,
+.form-type-checkbox input[type="checkbox"] + label {
+  display: table-cell;
+  padding-top: 10px; }
+
+.form-type-radio input[type="radio"],
+.form-type-checkbox input[type="checkbox"] {
   display: none; }
+
+.form-type-radio input[type="radio"] + label:before,
+.form-type-checkbox input[type="checkbox"] + label:before {
+  display: inline-block;
+  font-family: "SPruit-icons", "SPnet-icons";
+  content: 'v';
+  color: #fff;
+  background: #fff;
+  padding: 6px;
+  margin-right: 8px;
+  border: 2px solid #333;
+  font-size: 1rem;
+  display: table-cell;
+  float: left;
+  margin-top: -4px;
+  line-height: 1; }
+
+.form-type-radio input:checked + label:before,
+.form-type-checkbox input:checked + label:before {
+  content: 'v';
+  color: #EC1B23 !important;
+  background: #fff; }
+
+.form-type-radio input:checked + label,
+.form-type-checkbox input:checked + label {
+  color: #EC1B23; }
+
+.no-touch .form-type-radio:hover input + label:before,
+.no-touch .form-type-checkbox:hover input + label:before {
+  color: #aaa; }
+
+.form-item .form-select:focus,
+.form-item .form-textarea:focus,
+.form-item .form-text:focus {
+  outline: none;
+  box-shadow: inset 0 0 16px rgba(1, 1, 1, 0.1);
+  border-color: #333333; }
+
+input[type="file"] {
+  margin-bottom: .5rem; }
+
+input.form-submit,
+input.webform-previous,
+input.button-primary {
+  font-family: HelveticaInseratLTPro, sans-serif;
+  text-transform: uppercase;
+  background: #EC1B23;
+  padding: 8px 16px;
+  color: #fff;
+  border: 1px solid #EC1B23;
+  transition: all 0.2s ease;
+  outline: none;
+  cursor: pointer; }
+
+input.webform-previous {
+  background: #fff;
+  color: #EC1B23; }
+
+input.webform-previous:hover,
+input.button-primary:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000; }
+
+@media only screen and (max-width: 500px) {
+  .form-submit {
+    width: 100%;
+    margin-bottom: 8px; } }
+.horizontal {
+  overflow: hidden; }
+  .horizontal .form-item {
+    display: block;
+    float: left;
+    overflow: hidden;
+    height: auto;
+    margin-right: 16px; }
+
+.block-select .form-item label {
+  border: 2px solid #333;
+  padding: 16px 24px;
+  background: #fafafa;
+  display: block;
+  cursor: pointer; }
+  .block-select .form-item label:hover {
+    border-color: #EC1B23;
+    color: #EC1B23; }
+.block-select .form-item input {
+  display: none; }
+.block-select .form-item input:checked + label {
+  background-color: #333;
+  color: #fff; }
+
+.container-inline-date .date-padding {
+  margin-bottom: 1rem; }
+
+.required.error {
+  background: #f2dede; }
+  .required.error::placeholder {
+    color: #d4aeae;
+    opacity: 1;
+    /* Firefox */ }
+
+.voting .form-type-radio input[type="radio"] + label:before,
+.voting .form-type-checkbox input[type="checkbox"] + label:before {
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  border-radius: 5px; }
 
 /* LEGACY HEADER */
 .site-header {
@@ -1653,13 +1792,14 @@ footer .copyright {
 
   .site-header .search-toggle a {
     font-size: 3.4em; } }
-/* MESSAGES */
+/* DRUPAL MESSAGES */
 .messages {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+  border: 1px solid; }
 
 .messages .message {
-  font-size: .9rem;
-  padding: 1rem; }
+  font-size: .9rem; }
   .messages .message:before {
     font-family: 'SPnet-Icons';
     font-size: 1.14em;
@@ -1669,21 +1809,47 @@ footer .copyright {
   margin-bottom: .5rem; }
 
 .messages .status {
-  background: #8f7;
-  padding: 1rem; }
+  background: #8f7; }
   .messages .status p:before {
     content: '\e606';
-    font-family: 'SPnet-Icons'; }
+    font-family: "SPruit-icons", "SPnet-icons";
+    margin-right: .5rem; }
+
+.messages .success {
+  background: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d; }
+  .messages .success:before {
+    content: '\e606';
+    font-family: "SPruit-icons", "SPnet-icons";
+    margin-right: .5rem; }
+
+.messages .info {
+  background: #d9edf7;
+  border-color: #bce8f1;
+  color: #8a6d3b; }
+  .messages .info:before {
+    content: '\e604';
+    font-family: "SPruit-icons", "SPnet-icons";
+    margin-right: .5rem; }
 
 .messages .warning {
-  background: #ff4; }
+  background: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b; }
   .messages .warning:before {
-    content: '\e605'; }
+    content: '\e604';
+    font-family: "SPruit-icons", "SPnet-icons";
+    margin-right: .5rem; }
 
 .messages .error {
-  border: 1px solid #f5c6cb;
+  border-color: #f5c6cb;
   color: #721c24;
   background: #f8d7da; }
+  .messages .error:before {
+    content: '\e605';
+    font-family: "SPruit-icons", "SPnet-icons";
+    margin-right: .5rem; }
 
 /* LEGACY NAVIGATION */
 .site-navigation {
@@ -1954,13 +2120,27 @@ footer .copyright {
 .page-aanmelden .breadcrumb {
   display: none; }
 
+.page-aanmelden-lid .site-logo a {
+  display: block;
+  width: 130px;
+  height: 70px;
+  overflow: hidden; }
+
+@media only screen and (max-width: 768px) {
+  .page-aanmelden .site-logo a {
+    height: 32px !important;
+    width: 60px !important; } }
+@media only screen and (max-width: 1080px) {
+  .page-aanmelden .site-logo a {
+    height: 59px !important;
+    width: 110px !important; } }
 /* LEGACY MEMBERFORM (from module) */
 /* remove important after disabling css in main theme */
 .page-aanmelden .page-wrapper:after {
   background: #f1f1f1; }
 
 .page-aanmelden form fieldset {
-  border: none !important; }
+  border: none; }
 
 .page-aanmelden .ajax-progress {
   display: none;
@@ -1975,7 +2155,8 @@ footer .copyright {
 .page-aanmelden header h1 {
   background: #fff;
   text-align: left !important;
-  color: #222 !important; }
+  color: #222 !important;
+  margin-top: 0; }
 
 .page-aanmelden form {
   background: #fff !important;
@@ -1986,54 +2167,17 @@ footer .copyright {
   margin: 0 -1rem 1rem -1rem; }
 
 .page-aanmelden form h3 {
-  margin: 1rem auto .5rem auto;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto; }
 
-.page-aanmelden form h3,
 .page-aanmelden form .memberform,
-.page-aanmelden form table,
-.page-aanmelden form p {
-  max-width: 480px;
-  /* 50% of maxwidth 960px */
-  margin: 0 auto; }
-
+.page-aanmelden form p,
 .page-aanmelden form table {
-  text-align: left; }
-
-.page-aanmelden form label {
-  display: block !important;
-  font-size: 1rem;
-  font-weight: normal;
-  font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
-  letter-spacing: .3px; }
-
-.page-aanmelden form label.option {
-  display: inline-block !important; }
-
-.page-aanmelden .form-select {
-  padding: .5rem;
-  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
-  font-size: 1rem;
-  background: #fafafa;
-  border: 1px solid #ddd;
-  width: 100%;
-  text-overflow: ellipsis; }
-
-.page-aanmelden .form-type-date-select .form-type-select {
-  margin-right: .5rem; }
-
-.page-aanmelden .form-item {
-  padding: 1rem 0 0 0; }
-
-.page-aanmelden .form-item .form-text {
-  max-width: 100%;
-  width: 100%;
-  padding: .8rem;
-  background: #fafafa;
-  border: 1px solid #ddd;
-  color: #333;
-  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
-  box-sizing: border-box; }
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .page-aanmelden .form-item .form-select:focus,
 .page-aanmelden .form-item .form-textarea:focus,
@@ -2042,58 +2186,12 @@ footer .copyright {
   box-shadow: 0 0 5px 0 #c8c8c8;
   border: 1px solid #888; }
 
-.page-aanmelden .messages {
-  border: 1px solid;
-  padding: .7rem 1rem;
-  font-family: sans-serif;
-  margin-top: 4px; }
-
-.page-aanmelden .error {
-  background-color: #fff8d9;
-  border-color: #ffea8e;
-  color: #f77b00; }
-
-.page-aanmelden .info {
-  background-color: #d9edf7;
-  border-color: #bce8f1;
-  color: #31708f; }
-
-.page-aanmelden .success {
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
-  color: #3c763d; }
-
-.page-aanmelden .warning {
-  background: #fcf8e3;
-  border-color: #faebcc;
-  color: #8a6d3b; }
-
-/* EURO SIGN PREFIX CONTRIBUTIONS */
-.page-aanmelden .form-item-page-contribution-custom {
-  position: relative;
-  /* set parent relative */ }
-
-span.field-prefix {
-  position: absolute;
-  /* absolute on parent */
-  z-index: 999;
-  padding: 16px 0 16px 16px; }
-
-.page-aanmelden .form-item-page-contribution-custom input {
-  padding-left: 32px !important;
-  /* extra padding for prefix */ }
-
 #memberform_form_wrapper div.form-type-radio {
-  display: inline-block; }
+  display: inline-block;
+  margin-right: 1rem; }
 
 #memberform_form_wrapper input[type="radio"] {
   display: none; }
-
-#memberform_form_wrapper label.option {
-  padding: 12px;
-  border: 1px solid #ddd;
-  cursor: pointer;
-  overflow-wrap: break-word; }
 
 #memberform_form_wrapper label.option img {
   float: left;
@@ -2102,18 +2200,6 @@ span.field-prefix {
 #memberform_form_wrapper label.option span {
   vertical-align: top; }
 
-#memberform_form_wrapper input[type="radio"]:checked + label,
-#memberform_form_wrapper input[type="radio"]:hover + label {
-  background: #f60000;
-  color: #fff; }
-
-#memberform_form_wrapper .introduction p {
-  margin: 1em auto 0 auto;
-  padding: 0;
-  font-size: 16px !important;
-  color: #333; }
-
-/* MEMBERFORM NAVIGATION */
 .memberform-navigation {
   text-align: center; }
 
@@ -2138,12 +2224,12 @@ span.field-prefix {
 .memberform-navigation .form-submit:hover {
   border: none;
   /* removes default from forms.scss */
-  border-bottom: 3px solid #f60000;
-  background: #f60000;
+  border-bottom: 3px solid #EC1B23;
+  background: #EC1B23;
   color: #fff !important; }
 
 .memberform-navigation .form-submit.active {
-  border-bottom: 3px solid #f60000; }
+  border-bottom: 3px solid #EC1B23; }
 
 .memberform-navigation .form-button-disabled {
   color: #ddd; }
@@ -2154,21 +2240,10 @@ span.field-prefix {
   background: #fff;
   color: #ddd !important; }
 
-/* MEMBERFORM INPUT */
 #memberform_form_wrapper input::placeholder {
   color: #ccc;
   /* should be styled in form default */ }
 
-#memberform_form_wrapper .form-item-page-red-membership input[type="radio"] {
-  display: inline-block !important; }
-
-#memberform_form_wrapper .form-item-page-red-membership label.option {
-  border: none;
-  padding: 4px; }
-
-@media screen and (max-width: 360px) {
-  #memberform_form_wrapper .form-item-page-red-membership label.option {
-    max-width: 280px; } }
 #memberform_form_wrapper div.form-type-radio.form-item-page-gift-select-lid-sp {
   display: block; }
 
@@ -2176,31 +2251,18 @@ span.field-prefix {
   width: 100%;
   box-sizing: border-box; }
 
-#memberform_form_wrapper table th {
-  border-bottom: 2px solid #ddd;
-  padding-top: 1rem; }
-
-/* MEMBERFORM ACTION */
 .memberform-action {
-  max-width: 480px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 0 !important;
   /* overwrite default spnet theme */ }
-
-.memberform-action input[type="submit"],
-.memberform-action .btn,
-.memberform-action .btn-invert {
-  padding: 1rem 2rem;
-  margin-top: 1rem;
-  margin-right: 0;
-  min-width: 140px; }
 
 .memberform-action .btn.hollow, .memberform-action .hollow.btn-invert {
   background: #fff;
   color: #ec1b23; }
 
-.memberform-action .btn.previous, .memberform-action .previous.btn-invert {
-  margin-right: 1em; }
+.memberform-action input {
+  margin-right: 1rem; }
 
 .btn.do-call-back, .do-call-back.btn-invert {
   padding: 1rem 2rem;
@@ -2210,7 +2272,6 @@ span.field-prefix {
 #memberform_form_wrapper .memberform-inform-button {
   text-align: center; }
 
-/* MEMBERFORM CALL BACK OR CONTINUE */
 #edit-action,
 #edit-action--2 {
   text-align: center;
@@ -2233,15 +2294,9 @@ span.field-prefix {
   .page-aanmelden form h3 {
     font-size: 1rem; }
 
-  .page-aanmelden .form-item .form-text {
-    padding: .6rem .4rem .4rem .4rem; }
-
   .page-aanmelden .site-logo a {
     height: 32px !important;
     width: 60px !important; }
-
-  .page-aanmelden form fieldset {
-    padding: 0 .72em 0 .72em !important; }
 
   .page-aanmelden .memberform-navigation {
     padding: 0;
@@ -2254,17 +2309,17 @@ span.field-prefix {
 
   .page-aanmelden-lid .content-header .title:before {
     content: 'T';
-    font-family: 'SPnet-icons';
+    font-family: "SPruit-icons", "SPnet-icons";
     display: inline-block;
     padding: 0;
     margin-right: .5rem;
     font-size: 1.6em;
     line-height: 0;
-    vertical-align: -6px; }
+    vertical-align: -6px;
+    color: #EC1B23; }
 
   .page-aanmelden .site-header {
     display: none; } }
-/* LEGACY SPNET AANMELDEN */
 .page-aanmelden .content-header .title {
   color: #EC1B23;
   text-align: center; }
@@ -2275,7 +2330,6 @@ span.field-prefix {
 .page-aanmelden .main-top-wrapper {
   display: none; }
 
-/* Form */
 .page-aanmelden .spaanmelden-progress ul {
   list-style: none;
   padding: 0; }
@@ -2286,24 +2340,11 @@ span.field-prefix {
   margin: 0;
   padding: 0; }
 
-.page-aanmelden form fieldset {
-  border: none;
-  border-bottom: 3px solid #f1f1f1;
-  padding: 0 .72em 2.1em .72em;
-  overflow: hidden; }
-
-.page-aanmelden form fieldset:last-of-type {
-  border-bottom: none; }
-
 .page-aanmelden form legend {
   margin: 0;
   padding: 0;
   font-family: "HelveticaNeueLTStd-BdCn"; }
 
-.page-aanmelden form label {
-  display: inline-block; }
-
-/* SP-lid aanmelden specifics */
 #spaanmelden-form-lid .form-item-personal-information-middlename input {
   width: 80px; }
 
@@ -2362,13 +2403,6 @@ span.field-prefix {
 
 #spaanmelden-form-lid td {
   vertical-align: top; }
-
-/* NEW */
-.page-aanmelden-lid .site-logo a {
-  display: block;
-  width: 150px;
-  height: 84px;
-  overflow: hidden; }
 
 /* SPNET MAIN */
 .logged-in.page-overzicht .primary-content {
@@ -2841,6 +2875,9 @@ span.field-prefix {
   text-align: center; }
 
 /* PAGES */
+#wijzigingscontactgegevens-mijn-gegevens-form fieldset {
+  max-width: 500px; }
+
 /* THEMES */
 /* THEME */
 .bg-white {
