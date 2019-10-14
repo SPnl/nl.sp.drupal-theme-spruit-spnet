@@ -1861,42 +1861,42 @@ input.button-primary:hover {
     font-family: "SPruit-icons", "SPnet-icons";
     margin-right: .5rem; }
 
-.messages .success {
+.message .success {
   background: #dff0d8;
   border-color: #d6e9c6;
   color: #3c763d;
   padding: .5rem 1rem; }
-  .messages .success:before {
+  .message .success:before {
     content: '\e606';
     font-family: "SPruit-icons", "SPnet-icons";
     margin-right: .5rem; }
 
-.messages .info {
+.message .info {
   background: #d9edf7;
   border-color: #bce8f1;
   color: #8a6d3b;
   padding: .5rem 1rem; }
-  .messages .info:before {
+  .message .info:before {
     content: '\e604';
     font-family: "SPruit-icons", "SPnet-icons";
     margin-right: .5rem; }
 
-.messages .warning {
+.message .warning {
   background: #fcf8e3;
   border-color: #faebcc;
   color: #8a6d3b;
   padding: .5rem 1rem; }
-  .messages .warning:before {
+  .message .warning:before {
     content: '\e604';
     font-family: "SPruit-icons", "SPnet-icons";
     margin-right: .5rem; }
 
-.messages .error {
+.message .error {
   background: #f8d7da;
   border-color: #f5c6cb;
   color: #721c24;
   padding: .5rem 1rem; }
-  .messages .error:before {
+  .message .error:before {
     content: '\e605';
     font-family: "SPruit-icons", "SPnet-icons";
     margin-right: .5rem; }
