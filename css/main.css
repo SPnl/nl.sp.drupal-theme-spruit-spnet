@@ -1845,7 +1845,8 @@ input.button-primary:hover {
   border: 1px solid; }
 
 .messages .message {
-  font-size: .9rem; }
+  font-size: .9rem;
+  padding: .5rem 1rem; }
   .messages .message:before {
     font-family: 'SPnet-Icons';
     font-size: 1.14em;
@@ -1854,9 +1855,9 @@ input.button-primary:hover {
 .messages li {
   margin-bottom: .5rem; }
 
-.messages .status {
+.message .status {
   background: #8f7; }
-  .messages .status p:before {
+  .message .status p:before {
     content: '\e606';
     font-family: "SPruit-icons", "SPnet-icons";
     margin-right: .5rem; }
@@ -1864,8 +1865,7 @@ input.button-primary:hover {
 .message .success {
   background: #dff0d8;
   border-color: #d6e9c6;
-  color: #3c763d;
-  padding: .5rem 1rem; }
+  color: #3c763d; }
   .message .success:before {
     content: '\e606';
     font-family: "SPruit-icons", "SPnet-icons";
@@ -1874,8 +1874,7 @@ input.button-primary:hover {
 .message .info {
   background: #d9edf7;
   border-color: #bce8f1;
-  color: #8a6d3b;
-  padding: .5rem 1rem; }
+  color: #8a6d3b; }
   .message .info:before {
     content: '\e604';
     font-family: "SPruit-icons", "SPnet-icons";
@@ -1884,8 +1883,7 @@ input.button-primary:hover {
 .message .warning {
   background: #fcf8e3;
   border-color: #faebcc;
-  color: #8a6d3b;
-  padding: .5rem 1rem; }
+  color: #8a6d3b; }
   .message .warning:before {
     content: '\e604';
     font-family: "SPruit-icons", "SPnet-icons";
@@ -1894,8 +1892,7 @@ input.button-primary:hover {
 .message .error {
   background: #f8d7da;
   border-color: #f5c6cb;
-  color: #721c24;
-  padding: .5rem 1rem; }
+  color: #721c24; }
   .message .error:before {
     content: '\e605';
     font-family: "SPruit-icons", "SPnet-icons";

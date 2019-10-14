@@ -66,6 +66,7 @@
 }
 .messages .message {
 	font-size: .9rem;
+	padding: .5rem 1rem;
 	&:before {
 		font-family: 'SPnet-Icons';
 		font-size: 1.14em;
@@ -76,7 +77,7 @@
 	margin-bottom: .5rem;
 }
 
-.messages .status {
+.message .status {
 	background: #8f7;
 	p:before {
 		content: '\e606'; // success icon
@@ -88,7 +89,6 @@
 	background: #dff0d8;
 	border-color: #d6e9c6;
 	color: #3c763d;
-	padding: .5rem 1rem;
 	&:before {
 		content: '\e606'; // success icon
 		font-family: $sp-icons;
@@ -99,7 +99,6 @@
 	background: #d9edf7;
 	border-color: #bce8f1;
 	color: #8a6d3b;
-	padding: .5rem 1rem;
 	&:before {
 		content: '\e604'; // info icon
 		font-family: $sp-icons;
@@ -110,7 +109,6 @@
 	background: #fcf8e3;
 	border-color: #faebcc;
 	color: #8a6d3b;
-	padding: .5rem 1rem;
 	&:before {
 		content: '\e604'; // info icon
 		font-family: $sp-icons;
@@ -121,7 +119,6 @@
 	background: #f8d7da;
 	border-color: #f5c6cb;
 	color: #721c24;
-	padding: .5rem 1rem;
 	&:before {
 		content: '\e605'; // cross icon
 		font-family: $sp-icons;
