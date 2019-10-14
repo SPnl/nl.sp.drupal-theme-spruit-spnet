@@ -1,7 +1,67 @@
 /* DRUPAL MESSAGES */
+
+// QUICKFIX
+// membform module uses an incorrect class to display inline erors: .messages.error
+// correct form is .messages for the wrappers and .message.error (without s) for the error message
+// needs to be fixed later
+.messages.status {
+	background: #8f7;
+	p:before {
+		content: '\e606'; // success icon
+		font-family: $sp-icons;
+		margin-right: .5rem;
+	}
+}
+.messages.success {
+	background: #dff0d8;
+	border-color: #d6e9c6;
+	color: #3c763d;
+	padding: .5rem 1rem;
+	&:before {
+		content: '\e606'; // success icon
+		font-family: $sp-icons;
+		margin-right: .5rem;
+	}
+}
+.messages.info {
+	background: #d9edf7;
+	border-color: #bce8f1;
+	color: #8a6d3b;
+	padding: .5rem 1rem;
+	&:before {
+		content: '\e604'; // info icon
+		font-family: $sp-icons;
+		margin-right: .5rem;
+	}
+}
+.messages.warning {
+	background: #fcf8e3;
+	border-color: #faebcc;
+	color: #8a6d3b;
+	padding: .5rem 1rem;
+	&:before {
+		content: '\e604'; // info icon
+		font-family: $sp-icons;
+		margin-right: .5rem;
+	}
+}
+.messages.error {
+	background: #f8d7da;
+	border-color: #f5c6cb;
+	color: #721c24;
+	padding: .5rem 1rem;
+	&:before {
+		content: '\e605'; // cross icon
+		font-family: $sp-icons;
+		margin-right: .5rem;
+	}
+}
+// remove above part after fixing memberform module
+// END SHAME
+
+
 .messages {
 	margin-bottom: 1rem;
-	padding: .5rem 1rem;
 	border: 1px solid;
 }
 .messages .message {
@@ -15,6 +75,7 @@
 .messages li {
 	margin-bottom: .5rem;
 }
+
 .messages .status {
 	background: #8f7;
 	p:before {
@@ -27,6 +88,7 @@
 	background: #dff0d8;
 	border-color: #d6e9c6;
 	color: #3c763d;
+	padding: .5rem 1rem;
 	&:before {
 		content: '\e606'; // success icon
 		font-family: $sp-icons;
@@ -37,6 +99,7 @@
 	background: #d9edf7;
 	border-color: #bce8f1;
 	color: #8a6d3b;
+	padding: .5rem 1rem;
 	&:before {
 		content: '\e604'; // info icon
 		font-family: $sp-icons;
@@ -47,6 +110,7 @@
 	background: #fcf8e3;
 	border-color: #faebcc;
 	color: #8a6d3b;
+	padding: .5rem 1rem;
 	&:before {
 		content: '\e604'; // info icon
 		font-family: $sp-icons;
@@ -54,9 +118,10 @@
 	}
 }
 .messages .error {
+	background: #f8d7da;
 	border-color: #f5c6cb;
 	color: #721c24;
-	background: #f8d7da;
+	padding: .5rem 1rem;
 	&:before {
 		content: '\e605'; // cross icon
 		font-family: $sp-icons;

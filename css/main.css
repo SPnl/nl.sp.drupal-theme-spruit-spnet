@@ -1793,9 +1793,55 @@ input.button-primary:hover {
   .site-header .search-toggle a {
     font-size: 3.4em; } }
 /* DRUPAL MESSAGES */
+.messages.status {
+  background: #8f7; }
+  .messages.status p:before {
+    content: '\e606';
+    font-family: "SPruit-icons", "SPnet-icons";
+    margin-right: .5rem; }
+
+.messages.success {
+  background: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+  padding: .5rem 1rem; }
+  .messages.success:before {
+    content: '\e606';
+    font-family: "SPruit-icons", "SPnet-icons";
+    margin-right: .5rem; }
+
+.messages.info {
+  background: #d9edf7;
+  border-color: #bce8f1;
+  color: #8a6d3b;
+  padding: .5rem 1rem; }
+  .messages.info:before {
+    content: '\e604';
+    font-family: "SPruit-icons", "SPnet-icons";
+    margin-right: .5rem; }
+
+.messages.warning {
+  background: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;
+  padding: .5rem 1rem; }
+  .messages.warning:before {
+    content: '\e604';
+    font-family: "SPruit-icons", "SPnet-icons";
+    margin-right: .5rem; }
+
+.messages.error {
+  background: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+  padding: .5rem 1rem; }
+  .messages.error:before {
+    content: '\e605';
+    font-family: "SPruit-icons", "SPnet-icons";
+    margin-right: .5rem; }
+
 .messages {
   margin-bottom: 1rem;
-  padding: .5rem 1rem;
   border: 1px solid; }
 
 .messages .message {
@@ -1818,7 +1864,8 @@ input.button-primary:hover {
 .messages .success {
   background: #dff0d8;
   border-color: #d6e9c6;
-  color: #3c763d; }
+  color: #3c763d;
+  padding: .5rem 1rem; }
   .messages .success:before {
     content: '\e606';
     font-family: "SPruit-icons", "SPnet-icons";
@@ -1827,7 +1874,8 @@ input.button-primary:hover {
 .messages .info {
   background: #d9edf7;
   border-color: #bce8f1;
-  color: #8a6d3b; }
+  color: #8a6d3b;
+  padding: .5rem 1rem; }
   .messages .info:before {
     content: '\e604';
     font-family: "SPruit-icons", "SPnet-icons";
@@ -1836,16 +1884,18 @@ input.button-primary:hover {
 .messages .warning {
   background: #fcf8e3;
   border-color: #faebcc;
-  color: #8a6d3b; }
+  color: #8a6d3b;
+  padding: .5rem 1rem; }
   .messages .warning:before {
     content: '\e604';
     font-family: "SPruit-icons", "SPnet-icons";
     margin-right: .5rem; }
 
 .messages .error {
+  background: #f8d7da;
   border-color: #f5c6cb;
   color: #721c24;
-  background: #f8d7da; }
+  padding: .5rem 1rem; }
   .messages .error:before {
     content: '\e605';
     font-family: "SPruit-icons", "SPnet-icons";
