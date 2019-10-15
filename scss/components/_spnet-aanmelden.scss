@@ -23,7 +23,15 @@
       width: 110px !important;
     }
 }
-
+// quickfix: change red color >> yellow
+.page-aanmelden .messages .error,
+.page-aanmelden .messages.error,
+.page-aanmelden .message .error,
+.page-aanmelden .message.error {
+    background: #fcf8e3;
+    border:1px solid #8a6d3b;
+    color: #8a6d3b;
+ }
 // END SHAME
 
 // LOCAL VARIABLE

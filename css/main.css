@@ -1793,56 +1793,8 @@ input.button-primary:hover {
   .site-header .search-toggle a {
     font-size: 3.4em; } }
 /* DRUPAL MESSAGES */
-.messages.status {
-  background: #8f7; }
-  .messages.status p:before {
-    content: '\e606';
-    font-family: "SPruit-icons", "SPnet-icons";
-    margin-right: .5rem; }
-
-.messages.success {
-  background: #dff0d8;
-  border-color: #d6e9c6;
-  color: #3c763d;
-  padding: .5rem 1rem; }
-  .messages.success:before {
-    content: '\e606';
-    font-family: "SPruit-icons", "SPnet-icons";
-    margin-right: .5rem; }
-
-.messages.info {
-  background: #d9edf7;
-  border-color: #bce8f1;
-  color: #8a6d3b;
-  padding: .5rem 1rem; }
-  .messages.info:before {
-    content: '\e604';
-    font-family: "SPruit-icons", "SPnet-icons";
-    margin-right: .5rem; }
-
-.messages.warning {
-  background: #fcf8e3;
-  border-color: #faebcc;
-  color: #8a6d3b;
-  padding: .5rem 1rem; }
-  .messages.warning:before {
-    content: '\e604';
-    font-family: "SPruit-icons", "SPnet-icons";
-    margin-right: .5rem; }
-
-.messages.error {
-  background: #f8d7da;
-  border-color: #f5c6cb;
-  color: #721c24;
-  padding: .5rem 1rem; }
-  .messages.error:before {
-    content: '\e605';
-    font-family: "SPruit-icons", "SPnet-icons";
-    margin-right: .5rem; }
-
 .messages {
-  margin-bottom: 1rem;
-  border: 1px solid; }
+  margin-bottom: 1rem; }
 
 .messages .message {
   font-size: .9rem;
@@ -1855,45 +1807,82 @@ input.button-primary:hover {
 .messages li {
   margin-bottom: .5rem; }
 
-.message .status {
-  background: #8f7; }
-  .message .status p:before {
-    content: '\e606';
-    font-family: "SPruit-icons", "SPnet-icons";
-    margin-right: .5rem; }
-
-.message .success {
+.messages .status,
+.messages.status,
+.message .status
+.message.status {
+  padding: .5rem;
   background: #dff0d8;
-  border-color: #d6e9c6;
+  border: 1px solid #3c763d;
   color: #3c763d; }
-  .message .success:before {
+  .messages .status p:before,
+  .messages.status p:before,
+  .message .status
+  .message.status p:before {
     content: '\e606';
     font-family: "SPruit-icons", "SPnet-icons";
     margin-right: .5rem; }
 
-.message .info {
+.messages .success,
+.messages.success,
+.message .success,
+.message.succes {
+  padding: .5rem;
+  background: #dff0d8;
+  border: 1px solid #3c763d;
+  color: #3c763d; }
+  .messages .success:before,
+  .messages.success:before,
+  .message .success:before,
+  .message.succes:before {
+    content: '\e606';
+    font-family: "SPruit-icons", "SPnet-icons";
+    margin-right: .5rem; }
+
+.messages .info,
+.messages.info,
+.message .info,
+.message.info {
+  padding: .5rem;
   background: #d9edf7;
-  border-color: #bce8f1;
+  border: 1px solid #8a6d3b;
   color: #8a6d3b; }
-  .message .info:before {
+  .messages .info:before,
+  .messages.info:before,
+  .message .info:before,
+  .message.info:before {
     content: '\e604';
     font-family: "SPruit-icons", "SPnet-icons";
     margin-right: .5rem; }
 
-.message .warning {
+.messages .warning,
+.messages.warning,
+.message .warning,
+.message.warning {
+  padding: .5rem;
   background: #fcf8e3;
-  border-color: #faebcc;
+  border: 1px solid #8a6d3b;
   color: #8a6d3b; }
-  .message .warning:before {
+  .messages .warning:before,
+  .messages.warning:before,
+  .message .warning:before,
+  .message.warning:before {
     content: '\e604';
     font-family: "SPruit-icons", "SPnet-icons";
     margin-right: .5rem; }
 
-.message .error {
+.messages .error,
+.messages.error,
+.message .error,
+.message.error {
+  padding: .5rem;
   background: #f8d7da;
-  border-color: #f5c6cb;
+  border: 1px solid #721c24;
   color: #721c24; }
-  .message .error:before {
+  .messages .error:before,
+  .messages.error:before,
+  .message .error:before,
+  .message.error:before {
     content: '\e605';
     font-family: "SPruit-icons", "SPnet-icons";
     margin-right: .5rem; }
@@ -2181,6 +2170,14 @@ input.button-primary:hover {
   .page-aanmelden .site-logo a {
     height: 59px !important;
     width: 110px !important; } }
+.page-aanmelden .messages .error,
+.page-aanmelden .messages.error,
+.page-aanmelden .message .error,
+.page-aanmelden .message.error {
+  background: #fcf8e3;
+  border: 1px solid #8a6d3b;
+  color: #8a6d3b; }
+
 /* LEGACY MEMBERFORM (from module) */
 /* remove important after disabling css in main theme */
 .page-aanmelden .page-wrapper:after {
