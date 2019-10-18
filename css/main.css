@@ -1595,11 +1595,10 @@ input.button-primary:hover {
   margin-bottom: 1rem; }
 
 .required.error {
-  background: #f2dede; }
+  background: #fff1f0;
+  border: 1px solid #ffa39e; }
   .required.error::placeholder {
-    color: #d4aeae;
-    opacity: 1;
-    /* Firefox */ }
+    color: #de2c23; }
 
 .voting .form-type-radio input[type="radio"] + label:before,
 .voting .form-type-checkbox input[type="checkbox"] + label:before {
@@ -1812,8 +1811,8 @@ input.button-primary:hover {
 .message .status
 .message.status {
   padding: .5rem;
-  background: #dff0d8;
-  border: 1px solid #3c763d;
+  background: #f6ffed;
+  border: 1px solid #b7eb8f;
   color: #3c763d; }
   .messages .status p:before,
   .messages.status p:before,
@@ -1828,8 +1827,8 @@ input.button-primary:hover {
 .message .success,
 .message.succes {
   padding: .5rem;
-  background: #dff0d8;
-  border: 1px solid #3c763d;
+  background: #f6ffed;
+  border: 1px solid #b7eb8f;
   color: #3c763d; }
   .messages .success:before,
   .messages.success:before,
@@ -1860,8 +1859,8 @@ input.button-primary:hover {
 .message .warning,
 .message.warning {
   padding: .5rem;
-  background: #fcf8e3;
-  border: 1px solid #8a6d3b;
+  background: #fffbe6;
+  border: 1px solid #ffe58f;
   color: #8a6d3b; }
   .messages .warning:before,
   .messages.warning:before,
@@ -1876,9 +1875,9 @@ input.button-primary:hover {
 .message .error,
 .message.error {
   padding: .5rem;
-  background: #f8d7da;
-  border: 1px solid #721c24;
-  color: #721c24; }
+  background: #fff1f0;
+  border: 1px solid #ffa39e;
+  color: #de2c23; }
   .messages .error:before,
   .messages.error:before,
   .message .error:before,
@@ -2174,8 +2173,8 @@ input.button-primary:hover {
 .page-aanmelden .messages.error,
 .page-aanmelden .message .error,
 .page-aanmelden .message.error {
-  background: #fcf8e3;
-  border: 1px solid #8a6d3b;
+  background: #fffbe6;
+  border: 1px solid #ffe58f;
   color: #8a6d3b; }
 
 /* LEGACY MEMBERFORM (from module) */

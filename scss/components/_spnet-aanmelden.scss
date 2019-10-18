@@ -23,14 +23,14 @@
       width: 110px !important;
     }
 }
-// quickfix: change red color >> yellow
+// quickfix: change error styling to warning
 .page-aanmelden .messages .error,
 .page-aanmelden .messages.error,
 .page-aanmelden .message .error,
 .page-aanmelden .message.error {
-    background: #fcf8e3;
-    border:1px solid #8a6d3b;
-    color: #8a6d3b;
+    background: $warning-background;
+    border: $warning-border;
+    color: $warning-color;
  }
 // END SHAME
 

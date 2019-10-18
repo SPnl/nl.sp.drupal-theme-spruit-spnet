@@ -85,6 +85,7 @@ span.field-prefix + input {
     width: calc(100% - 2rem)!important;
 }
 
+
 .form-required {
   color: $color1;
 }
@@ -236,13 +237,15 @@ input.button-primary:hover {
 
 // INPUT ERROR / VALID
 .required.valid {
-    //background: green;
+    //background: $succes-background;
+    //border: $succes-border;
+    //color: $succes-color;
 }
 .required.error {
-    background: #f2dede;
+    background: $error-background;
+    border: $error-border;
     &::placeholder {
-        color: #d4aeae;
-        opacity: 1; /* Firefox */
+        color: $error-color;
     }
 }
 

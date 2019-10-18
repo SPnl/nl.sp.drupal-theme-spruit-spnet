@@ -22,9 +22,9 @@
 .message .status
 .message.status {
 	padding: .5rem;
-	background: #dff0d8;
-	border: 1px solid #3c763d;
-	color: #3c763d;
+	background: $status-background;
+	border: $status-border;
+	color: $status-color;
 	p:before {
 		content: '\e606'; // success icon
 		font-family: $sp-icons;
@@ -36,9 +36,9 @@
 .message .success,
 .message.succes {
 	padding: .5rem;
-	background: #dff0d8;
-	border:1px solid #3c763d;
-	color: #3c763d;
+	background: $succes-background;
+	border:$succes-border;
+	color: $succes-color;
 	&:before {
 		content: '\e606'; // success icon
 		font-family: $sp-icons;
@@ -50,9 +50,9 @@
 .message .info,
 .message.info {
 	padding: .5rem;
-	background: #d9edf7;
-	border:1px solid #8a6d3b;
-	color: #8a6d3b;
+	background: $info-background;
+	border: $info-border;
+	color: $info-color;
 	&:before {
 		content: '\e604'; // info icon
 		font-family: $sp-icons;
@@ -64,9 +64,9 @@
 .message .warning,
 .message.warning {
 	padding: .5rem;
-	background: #fcf8e3;
-	border:1px solid #8a6d3b;
-	color: #8a6d3b;
+	background: $warning-background;
+	border: $warning-border;
+	color: $warning-color;
 	&:before {
 		content: '\e604'; // info icon
 		font-family: $sp-icons;
@@ -78,9 +78,9 @@
 .message .error,
 .message.error {
 	padding: .5rem;
-	background: #f8d7da;
-	border:1px solid #721c24;
-	color: #721c24;
+	background: $error-background;
+	border: $error-border;
+	color: $error-color;
 	&:before {
 		content: '\e605'; // cross icon
 		font-family: $sp-icons;

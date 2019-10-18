@@ -29,6 +29,23 @@ $info: #17A2B8; //cyan
 $warning: #FFF154; // warm, friendly yellow
 $danger: #DC3545; //red
 
+// STATUS, SUCCES, INFO, WARNING, ERROR COLORS
+$status-border: 1px solid #b7eb8f;
+$status-background: #f6ffed;
+$status-color: #3c763d;
+$succes-border: 1px solid #b7eb8f;
+$succes-background: #f6ffed;
+$succes-color: #3c763d;
+$info-border: 1px solid #8a6d3b;
+$info-background: #d9edf7;
+$info-color: #8a6d3b;
+$warning-border: 1px solid #ffe58f;
+$warning-background: #fffbe6;
+$warning-color: #8a6d3b;
+$error-border: 1px solid #ffa39e;
+$error-background: #fff1f0;
+$error-color: #de2c23;
+
 // SOCIAL MEDIA
 $facebook: #3B5998;
 $twitter: #55ACEE;
