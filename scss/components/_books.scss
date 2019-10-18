@@ -1,17 +1,23 @@
 /* BOOKS */
-.pane-node-book-nav {
+.book-navigation {
     padding: 1rem;
     margin-bottom: 1rem;
     background: #F1F1F1;
 }
-
+@media only screen and (min-width:768px) {
+    .book-navigation {
+        min-width: 280px;
+        float: right;
+        margin: 0 0 1rem 1rem;
+    }
+}
 .book-navigation ul {
     margin: 0;
     padding-left: 1rem;
     color: $color1;
 }
 
-.pane-node-book-nav .pane-content li a {
+.book-navigation .pane-content li a {
     font-family: $font-middle;
     color: #000;
     display: block;
@@ -20,7 +26,7 @@
         color: $color1;
     }
 }
-.pane-node-book-nav .pane-content li a.active {
+.book-navigation .pane-content li a.active {
     color: $color1;
 }
 
@@ -32,26 +38,20 @@
         padding: 0 1.4em;
     }
 
-    .pane-node-book-nav .pane-content {
+    .book-navigation .pane-content {
         min-width: 280px;
         float: none;
         margin: .4em;
         border: none;
     }
 
-    .pane-node-book-nav .pane-content li {
+    .book-navigation .pane-content li {
         padding: 0;
         margin: 0;
         font-size: 1em;
     }
 }
-@media only screen and (min-width:768px) {
-    .pane-node-book-nav {
-        min-width: 280px;
-        float: right;
-        margin: 0 0 1rem 1rem;
-    }
-}
+
 
 // old and unused?
 .book-navigation .page-links {
