@@ -2463,12 +2463,14 @@ input.button-primary:hover {
     padding-top: 1rem; } }
 /* SPNET CONTENT */
 #spnet_content {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  flex: 1; }
 
 #spnet_content .section {
   background: #FFF;
   max-width: 1140px;
-  margin: 0 auto 2rem auto; }
+  margin: 0 auto 2rem auto;
+  flex: 1; }
   #spnet_content .section h1 {
     padding: .5rem 1rem;
     margin: 0;

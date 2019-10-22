@@ -23,12 +23,14 @@
 /* SPNET CONTENT */
 #spnet_content {
 	margin-bottom: 2rem;
+	flex: 1; // fixes IE 11 overflow for flex child!!
 }
 
 #spnet_content .section {
 	background: #FFF;
 	max-width: 1140px;
 	margin: 0 auto 2rem auto;
+	flex: 1; // fixes IE 11 overflow for flex child!!
 	h1 {
 		padding: .5rem 1rem;
 		margin: 0;
