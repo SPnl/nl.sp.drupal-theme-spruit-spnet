@@ -2505,16 +2505,17 @@ input.button-primary:hover {
   #spnet_content ul li {
     width: 100%;
     padding: .25rem 1rem;
+    padding-left: 42px;
     margin: 0; }
     #spnet_content ul li a {
-      width: 100%;
-      color: #000; }
+      color: #000;
+      display: inline-block; }
       #spnet_content ul li a:before {
         content: 'L';
         font-family: "SPruit-icons", "SPnet-icons";
-        padding-right: .25rem;
-        color: #EC1B23;
-        font-size: 1rem; }
+        position: absolute;
+        margin-left: -24px;
+        color: #EC1B23; }
       #spnet_content ul li a:hover {
         text-decoration: none;
         border: none; }
