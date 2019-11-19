@@ -56,7 +56,7 @@
           <?php endif; ?>
           
           <?php if (!empty($content['spnet_scholing'])) : ?>
-          <li><a class="js_scrolltolink" name="scholing">Scholing</a></li>
+          <li><a class="js_scrolltolink" name="scholing">Scholing & Training</a></li>
           <?php endif; ?>
 
           <?php if (!empty($content['spnet_rood'])) : ?>
@@ -143,7 +143,7 @@
 
     <?php if (!empty($content['spnet_scholing'])) : ?>
     <div class="flex flex-row flex-wrap section">
-        <h1 id="scholing">Scholing</h1>
+        <h1 id="scholing">Scholing & Training</h1>
         <?php print $content['spnet_scholing']; ?>
     </div>
     <?php endif; ?>
