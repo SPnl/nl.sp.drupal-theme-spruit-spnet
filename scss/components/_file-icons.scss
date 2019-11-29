@@ -1,0 +1,30 @@
+/* FILE ICONS */
+// for now a simple text indicator
+
+%file-icon {
+    color: #777;
+    font-size: .8em;
+}
+
+// try use alphabetic order
+a[href$='.docx']:after {
+    @extend %file-icon;
+    content: ' (.docx)';
+}
+a[href$='.pdf']:after {
+    @extend %file-icon;
+    content: ' (.pdf)';
+}
+a[href$='.pptx']:after {
+    @extend %file-icon;
+    content: ' (.pptx)';
+}
+a[href$='.pdf']:after {
+    @extend %file-icon;
+    content: ' (.pdf)';
+}
+a[href$='.xls']:after {
+    @extend %file-icon;
+    content: ' (.xls)';
+}
+
