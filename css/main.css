@@ -1231,6 +1231,17 @@ a.btn-text,
 .content .meta {
   color: #aaa; }
 
+/* CONTENT LABEL (field_label field used to categorize content) */
+.pane-node-terms.label {
+  background: #c1c1c1;
+  padding: 0 .5rem;
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: "HelveticaNeueLTStd-BdCn";
+  position: relative;
+  top: 24px;
+  display: inline-block; }
+
 /* LEGACY COOKIE BAR */
 #sliding-popup {
   background-color: #222;

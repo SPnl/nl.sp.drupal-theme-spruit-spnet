@@ -1,0 +1,13 @@
+/* CONTENT LABEL (field_label field used to categorize content) */
+
+// styling used in combination with panels
+.pane-node-terms.label { //quickfix
+    background: #c1c1c1;
+    padding: 0 .5rem;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: "HelveticaNeueLTStd-BdCn";
+    position: relative;
+    top: 24px;
+    display: inline-block
+}
