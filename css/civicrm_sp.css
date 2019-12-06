@@ -536,6 +536,36 @@ form#CustomData .custom-group-Gemeentes td.html-adjust {
 .page-civicrm.logged-in:not(.toolbar) header {
   margin-top: 27px; }
 
+.page-civicrm-event .primary-container {
+  max-width: 1140px; }
+
+.page-civicrm-event .content {
+  position: relative; }
+
+.page-civicrm-event .content .crm-form-checkbox,
+.page-civicrm-event .content .crm-form-radio {
+  position: absolute;
+  left: 0;
+  margin-top: 3px; }
+
+.page-civicrm-event .content label {
+  margin-left: 1rem; }
+
+.page-civicrm-event .content label:first-of-type {
+  margin-left: 21px; }
+
+.page-civicrm-event .content label:after {
+  content: '';
+  display: block; }
+
+@media screen and (max-width: 767px) {
+  .page-civicrm-event .crm-container .crm-section .content {
+    margin-left: 0; }
+
+  .page-civicrm-event .crm-container .crm-section .label {
+    float: none;
+    width: 100%;
+    text-align: left; } }
 .page-civicrm-event.not-logged-in .site-header .site-branding {
   overflow: hidden;
   width: 85px;
@@ -575,7 +605,9 @@ form#CustomData .custom-group-Gemeentes td.html-adjust {
 
 .page-civicrm header .title {
   max-width: 1180px;
-  margin-top: 0; }
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto; }
 
 #crm-container ul.wizard-bar {
   border-collapse: collapse;
