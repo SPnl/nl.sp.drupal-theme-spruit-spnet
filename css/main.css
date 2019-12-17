@@ -2010,6 +2010,10 @@ input.button-primary:hover {
 @media screen and (min-width: 1080px) {
   .primary-content {
     min-height: calc(100vh - 166px); } }
+.primary-content img {
+  max-width: 100%;
+  height: auto; }
+
 /* PRIMARY CONTAINER */
 .primary-container {
   padding: 1rem;

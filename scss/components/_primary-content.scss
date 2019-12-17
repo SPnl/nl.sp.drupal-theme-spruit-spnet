@@ -22,6 +22,11 @@
 		min-height: calc(100vh - 166px); //quickfix to prevent footer floating mid page
 	}
 }
+// quickfix make content images responsive
+.primary-content img {
+    max-width: 100%;
+    height: auto;
+}
 /* PRIMARY CONTAINER */
 // similiar as grid container
 .primary-container {
