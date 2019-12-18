@@ -1,0 +1,3 @@
+Generated using https://icomoon.io
+
+To generate a new font, upload SPnet-icons.json to icomoon. Make sure to export and save the new json after changes.

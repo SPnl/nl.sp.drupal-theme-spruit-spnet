@@ -1,10 +1,214 @@
 @font-face {
-	font-family: 'SPnet-icons';
-	src:url('SPnet-icons.eot?xpgs1d');
-	src:url('SPnet-icons.eot?#iefixxpgs1d') format('embedded-opentype'),
-		url('SPnet-icons.woff?xpgs1d') format('woff'),
-		url('SPnet-icons.ttf?xpgs1d') format('truetype'),
-		url('SPnet-icons.svg?xpgs1d#SPnet-icons') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'SPnet-icons';
+  src:  url('SPnet-icons.eot?jytbjw');
+  src:  url('SPnet-icons.eot?jytbjw#iefix') format('embedded-opentype'),
+    url('SPnet-icons.ttf?jytbjw') format('truetype'),
+    url('SPnet-icons.woff?jytbjw') format('woff'),
+    url('SPnet-icons.svg?jytbjw#SPnet-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'SPnet-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-emailmailmarkunreadlocal_post_office:before {
+  content: "\6d";
+}
+.icon-facebook:before {
+  content: "\66";
+  color: #4172b8;
+}
+.icon-instagram:before {
+  content: "\69";
+  color: #e4405f;
+}
+.icon-linkedin:before {
+  content: "\6c";
+  color: #0077b5;
+}
+.icon-signal:before {
+  content: "\30";
+  color: #2592e9;
+}
+.icon-twitter:before {
+  content: "\74";
+  color: #1da1f2;
+}
+.icon-whatsapp:before {
+  content: "\57";
+  color: #25d366;
+}
+.icon-youtube:before {
+  content: "\79";
+  color: #f00;
+}
+.icon-uni2A:before {
+  content: "\2a";
+}
+.icon-uni2B:before {
+  content: "\2b";
+}
+.icon-uni2F:before {
+  content: "\2f";
+}
+.icon-uni3E:before {
+  content: "\3e";
+}
+.icon-location:before {
+  content: "\41";
+}
+.icon-clock:before {
+  content: "\42";
+}
+.icon-share2:before {
+  content: "\43";
+}
+.icon-folder-open:before {
+  content: "\44";
+}
+.icon-newspaper:before {
+  content: "\45";
+}
+.icon-video-camera:before {
+  content: "\46";
+}
+.icon-tv:before {
+  content: "\47";
+}
+.icon-uni21922:before {
+  content: "\48";
+}
+.icon-uni50:before {
+  content: "\50";
+}
+.icon-uni53:before {
+  content: "\53";
+}
+.icon-uni54:before {
+  content: "\54";
+}
+.icon-uni56:before {
+  content: "\56";
+}
+.icon-uni5E:before {
+  content: "\5e";
+}
+.icon-uni63:before {
+  content: "\63";
+}
+.icon-folder:before {
+  content: "\64";
+}
+.icon-menu:before {
+  content: "\68";
+}
+.icon-uni70:before {
+  content: "\70";
+}
+.icon-uni72:before {
+  content: "\72";
+}
+.icon-uni73:before {
+  content: "\73";
+}
+.icon-uni75:before {
+  content: "\75";
+}
+.icon-uni76:before {
+  content: "\76";
+}
+.icon-uni77:before {
+  content: "\77";
+}
+.icon-uni78:before {
+  content: "\78";
+}
+.icon-uni7A:before {
+  content: "\7a";
+}
+.icon-uni201C:before {
+  content: "\201c";
+}
+.icon-uni201D:before {
+  content: "\201d";
+}
+.icon-uni2190:before {
+  content: "\2190";
+}
+.icon-uni2192:before {
+  content: "\2192";
+}
+.icon-uni2665:before {
+  content: "\2665";
+}
+.icon-phone:before {
+  content: "\e600";
+}
+.icon-uniE601:before {
+  content: "\e601";
+}
+.icon-uniE602:before {
+  content: "\e602";
+}
+.icon-uniE603:before {
+  content: "\e603";
+}
+.icon-uniE604:before {
+  content: "\e604";
+}
+.icon-uniE605:before {
+  content: "\e605";
+}
+.icon-uniE606:before {
+  content: "\e606";
+}
+.icon-uniE607:before {
+  content: "\e607";
+}
+.icon-uniE608:before {
+  content: "\e608";
+}
+.icon-uniE609:before {
+  content: "\e609";
+}
+.icon-uniE60A:before {
+  content: "\e60a";
+}
+.icon-uniE60B:before {
+  content: "\e60b";
+}
+.icon-volume-medium:before {
+  content: "\e907";
+}
+.icon-file-text2:before {
+  content: "\31";
+}
+.icon-link:before {
+  content: "\4c";
+}
+.icon-new-tab:before {
+  content: "\6e";
+}
+.icon-file-pdf:before {
+  content: "\33";
+}
+.icon-file-word:before {
+  content: "\32";
+}
+.icon-file-excel:before {
+  content: "\34";
 }

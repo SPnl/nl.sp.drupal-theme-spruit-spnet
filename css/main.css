@@ -2536,10 +2536,23 @@ input.button-primary:hover {
         font-family: "SPruit-icons", "SPnet-icons";
         position: absolute;
         margin-left: -24px;
-        color: #EC1B23; }
+        color: #999; }
       #spnet_content ul li a:hover {
         text-decoration: none;
         border: none; }
+    #spnet_content ul li a[href$=".pdf"]:before {
+      content: '3';
+      font-family: "SPruit-icons", "SPnet-icons";
+      position: absolute;
+      margin-left: -24px;
+      color: #999; }
+    #spnet_content ul li a[href$=".doc"]:before,
+    #spnet_content ul li a[href$=".docx"]:before {
+      content: '2';
+      font-family: "SPruit-icons", "SPnet-icons";
+      position: absolute;
+      margin-left: -24px;
+      color: #999; }
     #spnet_content ul li:hover {
       background: #F1F1F1; }
 

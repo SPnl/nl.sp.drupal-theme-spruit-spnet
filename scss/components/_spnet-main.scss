@@ -84,17 +84,39 @@
 			color: #000;
                         display: inline-block;
 			&:before {
-			    content: 'L'; // Link 
+			    content: 'L'; // link 
 			    font-family: $sp-icons;
                             position: absolute;
                             margin-left: -24px;
-			    color: $color1;
+			    color: #999;
 			}
 			&:hover {
 				text-decoration: none;
 				border: none;
 			}
 		}
+		a[href$=".pdf"] {
+                        &:before {
+                        	content: '3'; // Link
+                        	font-family: $sp-icons;
+                        	position: absolute;
+                        	margin-left: -24px;
+                        	color: #999;
+                        }
+
+		}
+		a[href$=".doc"],
+		a[href$=".docx"] {
+                        &:before {
+                                content: '2'; // Link
+                                font-family: $sp-icons;
+                                position: absolute;
+                                margin-left: -24px;
+                                color: #999;
+                        }
+
+                }
+
 		&:hover{
 			background: #F1F1F1;
 		}
