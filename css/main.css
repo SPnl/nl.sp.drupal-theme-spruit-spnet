@@ -2532,26 +2532,34 @@ input.button-primary:hover {
       color: #000;
       display: inline-block; }
       #spnet_content ul li a:before {
-        content: 'L';
+        content: 'n';
         font-family: "SPruit-icons", "SPnet-icons";
         position: absolute;
-        margin-left: -24px;
+        margin-left: -26px;
         color: #999; }
       #spnet_content ul li a:hover {
         text-decoration: none;
         border: none; }
+    #spnet_content ul li a[href^="http://www.spnet.nl"]:before,
+    #spnet_content ul li a[href^="https://www.spnet.nl"]:before,
+    #spnet_content ul li a[href^="/"]:before, #spnet_content ul li a[href^=".."]:before {
+      content: 'L';
+      font-family: "SPruit-icons", "SPnet-icons";
+      position: absolute;
+      margin-left: -26px;
+      color: #999; }
     #spnet_content ul li a[href$=".pdf"]:before {
       content: '3';
       font-family: "SPruit-icons", "SPnet-icons";
       position: absolute;
-      margin-left: -24px;
+      margin-left: -26px;
       color: #999; }
     #spnet_content ul li a[href$=".doc"]:before,
     #spnet_content ul li a[href$=".docx"]:before {
       content: '2';
       font-family: "SPruit-icons", "SPnet-icons";
       position: absolute;
-      margin-left: -24px;
+      margin-left: -26px;
       color: #999; }
     #spnet_content ul li:hover {
       background: #F1F1F1; }

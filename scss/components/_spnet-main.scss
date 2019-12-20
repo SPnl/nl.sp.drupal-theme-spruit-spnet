@@ -84,23 +84,35 @@
 			color: #000;
                         display: inline-block;
 			&:before {
-			    content: 'L'; // link 
-			    font-family: $sp-icons;
-                            position: absolute;
-                            margin-left: -24px;
-			    color: #999;
+				content: 'n'; // mostly likely external link 
+				font-family: $sp-icons;
+                        	position: absolute;
+                        	margin-left: -26px;
+				color: #999;
 			}
 			&:hover {
 				text-decoration: none;
 				border: none;
 			}
 		}
+                a[href^="http://www.spnet.nl"],
+		a[href^="https://www.spnet.nl"],
+		a[href^="/"], a[href^=".."] {
+                        &:before {
+                                content: 'L'; // internal links
+                                font-family: $sp-icons;
+                                position: absolute;
+                                margin-left: -26px;
+                                color: #999;
+                        }
+
+                }
 		a[href$=".pdf"] {
                         &:before {
                         	content: '3'; // Link
                         	font-family: $sp-icons;
                         	position: absolute;
-                        	margin-left: -24px;
+                        	margin-left: -26px;
                         	color: #999;
                         }
 
@@ -111,7 +123,7 @@
                                 content: '2'; // Link
                                 font-family: $sp-icons;
                                 position: absolute;
-                                margin-left: -24px;
+                                margin-left: -26px;
                                 color: #999;
                         }
 
