@@ -22,7 +22,7 @@ if ( ! user_is_logged_in()): ?>
 				</div>
 			</header>
 
-			
+
 
 			<div class="primary-content">
 				<div class="primary-container">
@@ -30,7 +30,21 @@ if ( ! user_is_logged_in()): ?>
 					<?php print $messages; ?>
 
 					<header class="content-header">
-						<h1 class="title">Inloggen op <?php print variable_get('site_name'); ?></h1>
+
+          <?php
+            if (
+              !empty($_SESSION['oauth2_server_authorize']) &&
+              !empty($_SESSION['oauth2_server_authorize']['auth_domain'])
+            ) {
+              $title = 'Inloggen voor ' . $_SESSION['oauth2_server_authorize']['auth_domain'];
+            }
+            else {
+              $title = 'Inloggen op ' . variable_get('site_name');
+            }
+          ?>
+
+
+						<h1 class="title"><?php print $title; ?></h1>
 					</header>
 
 					<?php
@@ -45,7 +59,7 @@ if ( ! user_is_logged_in()): ?>
 							)
 						);
 					endif; ?>
-					
+
 					<?php print render($page['help']); ?>
 
 					<a id="primary-content"></a>
