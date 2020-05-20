@@ -47,12 +47,8 @@
           <li><a class="js_scrolltolink" name="organisatie">Organisatie</a></li>
           <?php endif; ?>
 
-          <?php if (!empty($content['spnet_acties'])) : ?>
-          <li><a class="js_scrolltolink" name="acties">Acties</a></li>
-          <?php endif; ?>
-
           <?php if (!empty($content['spnet_campagnes'])) : ?>
-          <li><a class="js_scrolltolink" name="campagnes">Campagnes</a></li>
+          <li><a class="js_scrolltolink" name="campagnes">Campagnes en Acties</a></li>
           <?php endif; ?>
           
           <?php if (!empty($content['spnet_afdeling'])) : ?>
@@ -131,16 +127,9 @@
     </div>
     <?php endif; ?>
 
-    <?php if (!empty($content['spnet_acties'])) : ?>
-    <div class="flex flex-row flex-wrap section">
-        <h1 id="acties">Acties</h1>
-        <?php print $content['spnet_acties']; ?>
-    </div>
-    <?php endif; ?>
-
     <?php if (!empty($content['spnet_campagnes'])) : ?>
     <div class="flex flex-row flex-wrap section">
-        <h1 id="campagnes">Campagnes</h1>
+        <h1 id="campagnes">Campagnes en Acties</h1>
         <?php print $content['spnet_campagnes']; ?>
     </div>
     <?php endif; ?>
