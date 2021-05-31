@@ -64,9 +64,9 @@
           <?php endif; ?>
 
           <?php if (!empty($content['spnet_rood'])) : ?>
-          <li><a class="js_scrolltolink" name="rood">ROOD</a></li>
+          <li><a class="js_scrolltolink" name="rood">Jong in de SP</a></li>
           <?php endif; ?>
-        
+          <li><a class="logout" href="/user/logout">Uitloggen</a></li>        
         </ul>
       </div>
       <!-- SPNET MENU -->
@@ -161,7 +161,7 @@
 
     <?php if (!empty($content['spnet_rood'])) : ?>
     <div class="flex flex-row flex-wrap section">
-        <h1 id="rood">ROOD</h1>
+        <h1 id="rood">Jong in de SP</h1>
         <?php print $content['spnet_rood']; ?>
     </div>
     <?php endif; ?>

@@ -24,6 +24,6 @@ $plugin = array(
     'spnet_campagnes' => t('Campagnes'),
     'spnet_scholing' => t('Scholing'),
     'spnet_footer' => t('Footer'),
-    'spnet_rood' => t('ROOD'),
+    'spnet_rood' => t('Jong in de SP'),
   ),
 );
