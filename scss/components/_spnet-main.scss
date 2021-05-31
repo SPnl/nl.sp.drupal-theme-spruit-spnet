@@ -77,8 +77,8 @@
 	list-style: none;
 	li {
 		width: 100%;
-		padding: .25rem 1rem;
-                padding-left: 42px;
+		padding: .25rem 1rem .25rem 42px;
+        letter-spacing: -0.9px;
 		margin: 0;
 		a {
 			color: #000;
@@ -95,7 +95,7 @@
 				border: none;
 			}
 		}
-                a[href^="http://www.spnet.nl"],
+        a[href^="http://www.spnet.nl"],
 		a[href^="https://www.spnet.nl"],
 		a[href^="/"], a[href^=".."] {
                         &:before {

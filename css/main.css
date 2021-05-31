@@ -189,7 +189,8 @@ html {
   color: #222;
   font-size: 16px;
   line-height: 1.4;
-  font-family: "FreeSans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
   height: 100%; }
 
 @media screen and (min-width: 1980px) {
@@ -200,7 +201,8 @@ body {
   /* resize to full background */ }
 
 p {
-  margin: 0 0 1rem 0; }
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.9px; }
 
 hr {
   display: block;
@@ -277,8 +279,8 @@ h6 {
     font-size: 0.67rem;
     margin-top: 3.33rem; } }
 strong {
-  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
-  font-weight: normal; }
+  font-family: "Inter", sans-serif;
+  font-weight: 600; }
 
 .field.body li {
   margin-bottom: 1rem; }
@@ -344,6 +346,11 @@ tbody > tr {
 tr:nth-of-type(odd) {
   background-color: rgba(0, 0, 0, 0.05); }
 
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 1000;
+  src: local(""), url("../fonts/inter/Inter-VariableFont_slnt,wght.ttf") format("truetype-variations"), url("../fonts/inter/static/Inter-Regular.ttf") format("truetype"); }
 /* LAYOUT */
 *, ::after, ::before {
   -webkit-box-sizing: inherit;
@@ -2525,8 +2532,8 @@ input.button-primary:hover {
   list-style: none; }
   #spnet_content ul li {
     width: 100%;
-    padding: .25rem 1rem;
-    padding-left: 42px;
+    padding: .25rem 1rem .25rem 42px;
+    letter-spacing: -0.9px;
     margin: 0; }
     #spnet_content ul li a {
       color: #000;
