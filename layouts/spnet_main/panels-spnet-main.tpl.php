@@ -43,6 +43,10 @@
           <li><a class="js_scrolltolink" name="verkiezingen">Verkiezingen</a></li>
           <?php endif; ?>
           
+          <?php if (!empty($content['spnet_heeldemens'])) : ?>
+          <li><a class="js_scrolltolink" name="heeldemens">Heel de Mens</a></li>
+          <?php endif; ?>
+
 	  <?php if (!empty($content['spnet_organisatie'])) : ?>
           <li><a class="js_scrolltolink" name="organisatie">Organisatie</a></li>
           <?php endif; ?>
@@ -121,6 +125,13 @@
     <div class="flex flex-row flex-wrap section">
         <h1 id="verkiezingen">Verkiezingen</h1>
         <?php print $content['spnet_verkiezingen']; ?>
+    </div>
+    <?php endif; ?>
+
+    <?php if (!empty($content['spnet_heeldemens'])) : ?>
+    <div class="flex flex-row flex-wrap section">
+        <h1 id="heeldemens">Heel de Mens</h1>
+        <?php print $content['spnet_heeldemens']; ?>
     </div>
     <?php endif; ?>
 

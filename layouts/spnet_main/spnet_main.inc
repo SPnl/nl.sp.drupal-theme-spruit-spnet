@@ -20,6 +20,7 @@ $plugin = array(
     'spnet_landelijk' => t('Landelijk'),
     'spnet_afdeling' => t('Afdeling'),
     'spnet_organisatie' => t('Organisatie'),
+    'spnet_heeldemens' => t('Heel de Mens'),
     'spnet_verkiezingen' => t('Verkiezingen'),
     'spnet_campagnes' => t('Campagnes'),
     'spnet_scholing' => t('Scholing'),
